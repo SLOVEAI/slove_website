@@ -3,7 +3,7 @@ import '../index.css'
 
 function Footer() {
   return (
-    <div>footer</div>
+    <div className='text-2xl text-red-500'>footer</div>
   )
 }
 
