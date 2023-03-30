@@ -22,6 +22,7 @@ module.exports = {
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
+        clashDisplay: ["ClashDisplay-Bold", "sans-serif"],
       },
     },
   },

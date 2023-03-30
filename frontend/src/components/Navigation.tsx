@@ -74,7 +74,7 @@ function Navigation() {
               {navItems.map((item, i) => {
                 return (
                   <Link to={item.to} key={i}>
-                    <h3 className="text-2xl">{item.title}</h3>
+                    <h3 className="text-2xl font-clashDisplay">{item.title}</h3>
                   </Link>
                 );
               })}
