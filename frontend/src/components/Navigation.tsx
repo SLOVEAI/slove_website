@@ -19,6 +19,10 @@ const navItems = [
     title: "Blog",
     to: "/blog",
   },
+  {
+    title: "Events",
+    to: "/events",
+  },
 ];
 
 function Navigation() {

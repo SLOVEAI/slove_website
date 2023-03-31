@@ -4,7 +4,7 @@ import "../index.css";
 function Footer() {
   return (
     <>
-      <footer className="py-12 px-[5rem] flex flex-row justify-between items-center">
+      <footer className="py-[5rem] mb-[3rem] px-[7rem] flex flex-row justify-between items-center">
         <div>
           <svg
             width="151"
