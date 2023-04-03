@@ -43,15 +43,15 @@ function HomeSection3() {
         <h2 className="font-clashDisplay text-primaryColor_turquoise text-[4rem]">
           How can we help you
         </h2>
-        <div className="flex flex-row gap-5 mt-10">
+        <div className="flex flex-row bg-white px-8 py-1 rounded-full gap-[3rem] items-center mt-10">
           {targetTypes.map((targetType, targetIndex) => (
             <div
               key={targetIndex}
               onClick={() => goToTarget(targetIndex)}
               className={
                 targetIndex === currentIndex
-                  ? "text-secondaryColor_purple"
-                  : "text-white"
+                  ? "bg-secondaryColor_darkPurple text-white p-2 px-10 rounded-full"
+                  : "text-black"
               }
             >
               <h1 className="text-2xl cursor-pointer">As {targetType.type}</h1>

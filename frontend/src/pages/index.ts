@@ -3,3 +3,8 @@ export * from "./about-page";
 export * from "./blog-page";
 export * from "./features-page";
 export * from "./events-page";
+export * from "./contact-page";
+export * from "./cookies_page";
+export * from "./privacy-page";
+export * from "./faq-page";
+export * from "./terms-page";

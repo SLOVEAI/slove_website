@@ -2,7 +2,38 @@ import React from "react";
 import "../index.css";
 import { AiFillInstagram } from 'react-icons/ai'
 import { FaFacebook, FaLinkedinIn } from 'react-icons/fa'
+import { Link } from "react-router-dom";
 
+
+const generalFooterItems = [
+  {
+    title: "Help & FAQ",
+    to: "/faq",
+  },
+  {
+    title: "Contact",
+    to: "/contact",
+  },
+  {
+    title: "Career",
+    to: "/",
+  },
+];
+
+const legalFooterItems = [
+  {
+    title: "Terms & Conditions",
+    to: "/terms",
+  },
+  {
+    title: "Cookie Policy",
+    to: "/cookies",
+  },
+  {
+    title: "Privacy Policy",
+    to: "/privacy",
+  },
+];
 
 function Footer() {
   return (
@@ -55,17 +86,29 @@ function Footer() {
           <section>
             <ul>
               <li className="font-bold pb-6">General</li>
-              <li className="mb-2">Help & FAQ</li>
-              <li className="mb-2">Contact</li>
-              <li className="mb-2">Career</li>
+              <li className="mb-2">
+              {generalFooterItems.map((item, i) => {
+                return (
+                  <Link to={item.to} key={i}>
+                    <h3 className="mb-2">{item.title}</h3>
+                  </Link>
+                );
+              })}
+              </li>
             </ul>
           </section>
           <section>
             <ul>
               <li className="font-bold pb-8">Legal</li>
-              <li className="mb-2">Terms & Conditions</li>
-              <li className="mb-2">Cookie Policy</li>
-              <li className="mb-2">Privacy Policy</li>
+              <li className="mb-2">
+              {legalFooterItems.map((item, i) => {
+                return (
+                  <Link to={item.to} key={i}>
+                    <h3 className="mb-2">{item.title}</h3>
+                  </Link>
+                );
+              })}
+              </li>
             </ul>
           </section>
           <section>
