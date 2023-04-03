@@ -1,5 +1,8 @@
 import React from "react";
 import "../index.css";
+import { AiFillInstagram } from 'react-icons/ai'
+import { FaFacebook, FaLinkedinIn } from 'react-icons/fa'
+
 
 function Footer() {
   return (
@@ -52,25 +55,25 @@ function Footer() {
           <section>
             <ul>
               <li className="font-bold pb-6">General</li>
-              <li>Help & FAQ</li>
-              <li>Contact</li>
-              <li>Career</li>
+              <li className="mb-2">Help & FAQ</li>
+              <li className="mb-2">Contact</li>
+              <li className="mb-2">Career</li>
             </ul>
           </section>
           <section>
             <ul>
-              <li className="font-bold pb-6">Legal</li>
-              <li>Terms & Conditions</li>
-              <li>Cookie Policy</li>
-              <li>Privacy Policy</li>
+              <li className="font-bold pb-8">Legal</li>
+              <li className="mb-2">Terms & Conditions</li>
+              <li className="mb-2">Cookie Policy</li>
+              <li className="mb-2">Privacy Policy</li>
             </ul>
           </section>
           <section>
-            <ul>
+            <ul className="flex flex-col items-center">
               <li className="font-bold pb-6">Follow us</li>
-              <li>Instagram</li>
-              <li>FaceBook</li>
-              <li>LinkedIn</li>
+              <li><AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2" /></li>
+              <li><FaFacebook className="text-2xl text-secondaryColor_lilac mb-2" /></li>
+              <li><FaLinkedinIn className="text-3xl text-secondaryColor_lilac mb-2" /></li>
             </ul>
           </section>
         </div>

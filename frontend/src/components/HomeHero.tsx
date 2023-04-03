@@ -1,5 +1,8 @@
 import React from "react";
 import hero_img from "../assets/hero_img.png";
+import Button from "./Button";
+import { AiFillApple } from 'react-icons/ai'
+import { FaGooglePlay } from 'react-icons/fa'
 
 function HomeHero() {
   return (
@@ -13,17 +16,22 @@ function HomeHero() {
             Connect venues with musicians and bring the fans to events. <br />{" "}
             That has been our mission and we invite you to join us on this ride!
           </p>
-          <div className="flex flex-row">
-            <button className="py-2 px-5 rounded-full bg-pink-100">
-              Apple
-            </button>
-            <button className="py-2 px-5 rounded-full bg-pink-100">
-              Google
-            </button>
+          <div className="flex flex-row gap-10">
+          <Button
+          label="Download on Appstore"
+          icon={<AiFillApple className="text-white text-2xl" />}
+          className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
+          />
+          <Button
+          label="Download on Google Play"
+          icon={<FaGooglePlay className="text-white text-xl" />}
+          className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
+          />
           </div>
-          <button className="py-2 px-5 rounded-full bg-pink-100">
-            Sign up
-          </button>
+          <Button
+          label="Sign Up"
+          className="py-4 px-10 rounded-full bg-primaryColor_turquoise text-white"
+          />
         </section>
         <section>
           <img src={hero_img} alt="hero_img" />

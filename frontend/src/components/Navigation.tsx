@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
+import Button from '../components/Button'
 
 const navItems = [
   {
@@ -74,7 +75,7 @@ function Navigation() {
           </div>
 
           <ul className="flex flex-row gap-12 items-center">
-            <li className="flex flex-row gap-12 text-secondaryColor_lilac">
+            <li className="flex flex-row gap-12 text-secondaryColor_lilac text-manrope">
               {navItems.map((item, i) => {
                 return (
                   <Link to={item.to} key={i}>
@@ -85,14 +86,16 @@ function Navigation() {
             </li>
 
             <li>
-              <button className="py-2 px-5 rounded-full bg-pink-100">
-                Login
-              </button>
+              <Button
+              label="Login"
+              className="py-2 px-5 rounded-xl bg-transparent border border-secondaryColor_lilac text-white"
+              />
             </li>
             <li>
-              <button className="py-2 px-5 rounded-full bg-pink-100">
-                Signin
-              </button>
+              <Button
+              label="Signin"
+              className="py-2 px-5 rounded-xl bg-secondaryColor_lilac"
+              />
             </li>
           </ul>
         </div>
