@@ -1,7 +1,18 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { WebsiteLayout } from '../layouts/WebsiteLayout'
-import { HomePage, AboutPage, BlogPage, FeaturesPage, EventsPage, ContactPage, CookiesPage, FaqPage, PrivacyPage, TermsPage } from "../pages";
+import { WebsiteLayout } from "../layouts/WebsiteLayout";
+import {
+  HomePage,
+  AboutPage,
+  BlogPage,
+  FeaturesPage,
+  EventsPage,
+  ContactPage,
+  CookiesPage,
+  FaqPage,
+  PrivacyPage,
+  TermsPage,
+} from "../pages";
 
 export enum EnumRoutes {
   home = "/",

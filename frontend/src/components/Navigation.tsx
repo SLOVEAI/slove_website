@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
-import Button from '../components/Button'
+import Button from "../components/Button";
 
 const navItems = [
   {
@@ -87,14 +87,14 @@ function Navigation() {
 
             <li>
               <Button
-              label="Login"
-              className="py-2 px-5 rounded-xl bg-transparent border border-secondaryColor_lilac text-white"
+                label="Login"
+                className="py-2 px-5 rounded-xl bg-transparent border border-secondaryColor_lilac text-white"
               />
             </li>
             <li>
               <Button
-              label="Signin"
-              className="py-2 px-5 rounded-xl bg-secondaryColor_lilac"
+                label="Signin"
+                className="py-2 px-5 rounded-xl bg-secondaryColor_lilac"
               />
             </li>
           </ul>

@@ -1,10 +1,8 @@
 import React from "react";
-import CookiesSection from '../../components/CookiesSection'
+import CookiesSection from "../../components/CookiesSection";
 
 const CookiesPage = () => {
-  return (
-    <CookiesSection />
-  )
+  return <CookiesSection />;
 };
 
 export { CookiesPage };

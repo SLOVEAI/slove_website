@@ -9,12 +9,12 @@ import HomeSection6 from "../../components/HomeSection6";
 const HomePage = () => {
   return (
     <div>
-        <HomeHero />
-        <HomeSection2 />
-        <HomeSection3 />
-        <HomeSection4 />
-        <HomeSection5 />
-        <HomeSection6 />
+      <HomeHero />
+      <HomeSection2 />
+      <HomeSection3 />
+      <HomeSection4 />
+      <HomeSection5 />
+      <HomeSection6 />
     </div>
   );
 };

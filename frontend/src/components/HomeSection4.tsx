@@ -17,7 +17,7 @@ function HomeSection4() {
       type: "Venue owner",
       text: "This is gonna help me fall asleep big time!",
     },
-  ]
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -27,9 +27,9 @@ function HomeSection4() {
 
   return (
     <>
-    <div className="flex flex-col items-center font-clashDisplay mt-[10rem]">
-      <div className="flex flex-row gap-5 mb-[5rem] items-center">
-        {testimonials.map((testimonial, testimonialIndex) => (
+      <div className="flex flex-col items-center font-clashDisplay mt-[10rem]">
+        <div className="flex flex-row gap-5 mb-[5rem] items-center">
+          {testimonials.map((testimonial, testimonialIndex) => (
             <div
               key={testimonialIndex}
               onClick={() => goToTarget(testimonialIndex)}
@@ -39,23 +39,22 @@ function HomeSection4() {
                   : "border bg-transparent border-white w-3 h-3 rounded-full"
               }
             >
-                <button></button>
+              <button></button>
             </div>
           ))}
-      </div>
+        </div>
 
-      <div className="text-[4rem] text-white mb-8 px-[17rem] text-center">
-        "{testimonials[currentIndex].text}"
-      </div>
+        <div className="text-[4rem] text-white mb-8 px-[17rem] text-center">
+          "{testimonials[currentIndex].text}"
+        </div>
 
-      <div className="flex flex-row gap-1 self-end text-[2rem] mr-[4rem] text-secondaryColor_lilac">
-        <span>{testimonials[currentIndex].name},</span>
-        <span>{testimonials[currentIndex].type}</span>
+        <div className="flex flex-row gap-1 self-end text-[2rem] mr-[4rem] text-secondaryColor_lilac">
+          <span>{testimonials[currentIndex].name},</span>
+          <span>{testimonials[currentIndex].type}</span>
+        </div>
       </div>
-    </div>
-    
     </>
-  )
+  );
 }
 
-export default HomeSection4
+export default HomeSection4;

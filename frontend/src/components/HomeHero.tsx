@@ -1,8 +1,8 @@
 import React from "react";
 import hero_img from "../assets/hero_img.png";
 import Button from "./Button";
-import { AiFillApple } from 'react-icons/ai'
-import { FaGooglePlay } from 'react-icons/fa'
+import { AiFillApple } from "react-icons/ai";
+import { FaGooglePlay } from "react-icons/fa";
 
 function HomeHero() {
   return (
@@ -17,20 +17,20 @@ function HomeHero() {
             That has been our mission and we invite you to join us on this ride!
           </p>
           <div className="flex flex-row gap-10">
-          <Button
-          label="Download on Appstore"
-          icon={<AiFillApple className="text-white text-2xl" />}
-          className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
-          />
-          <Button
-          label="Download on Google Play"
-          icon={<FaGooglePlay className="text-white text-xl" />}
-          className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
-          />
+            <Button
+              label="Download on Appstore"
+              icon={<AiFillApple className="text-white text-2xl" />}
+              className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
+            />
+            <Button
+              label="Download on Google Play"
+              icon={<FaGooglePlay className="text-white text-xl" />}
+              className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
+            />
           </div>
           <Button
-          label="Sign Up"
-          className="py-4 px-10 rounded-full bg-primaryColor_turquoise text-white"
+            label="Sign Up"
+            className="py-4 px-10 rounded-full bg-primaryColor_turquoise text-white"
           />
         </section>
         <section>

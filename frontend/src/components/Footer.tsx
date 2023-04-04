@@ -1,9 +1,8 @@
 import React from "react";
 import "../index.css";
-import { AiFillInstagram } from 'react-icons/ai'
-import { FaFacebook, FaLinkedinIn } from 'react-icons/fa'
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 
 const generalFooterItems = [
   {
@@ -87,13 +86,13 @@ function Footer() {
             <ul>
               <li className="font-bold pb-6">General</li>
               <li className="mb-2">
-              {generalFooterItems.map((item, i) => {
-                return (
-                  <Link to={item.to} key={i}>
-                    <h3 className="mb-2">{item.title}</h3>
-                  </Link>
-                );
-              })}
+                {generalFooterItems.map((item, i) => {
+                  return (
+                    <Link to={item.to} key={i}>
+                      <h3 className="mb-2">{item.title}</h3>
+                    </Link>
+                  );
+                })}
               </li>
             </ul>
           </section>
@@ -101,22 +100,28 @@ function Footer() {
             <ul>
               <li className="font-bold pb-8">Legal</li>
               <li className="mb-2">
-              {legalFooterItems.map((item, i) => {
-                return (
-                  <Link to={item.to} key={i}>
-                    <h3 className="mb-2">{item.title}</h3>
-                  </Link>
-                );
-              })}
+                {legalFooterItems.map((item, i) => {
+                  return (
+                    <Link to={item.to} key={i}>
+                      <h3 className="mb-2">{item.title}</h3>
+                    </Link>
+                  );
+                })}
               </li>
             </ul>
           </section>
           <section>
             <ul className="flex flex-col items-center">
               <li className="font-bold pb-6">Follow us</li>
-              <li><AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2" /></li>
-              <li><FaFacebook className="text-2xl text-secondaryColor_lilac mb-2" /></li>
-              <li><FaLinkedinIn className="text-3xl text-secondaryColor_lilac mb-2" /></li>
+              <li>
+                <AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2" />
+              </li>
+              <li>
+                <FaFacebook className="text-2xl text-secondaryColor_lilac mb-2" />
+              </li>
+              <li>
+                <FaLinkedinIn className="text-3xl text-secondaryColor_lilac mb-2" />
+              </li>
             </ul>
           </section>
         </div>

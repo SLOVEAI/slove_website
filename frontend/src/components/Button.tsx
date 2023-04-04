@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
-  label: string
-  className: string
-  onClick?: () => void
-  icon?: any
-}
+  label: string;
+  className: string;
+  onClick?: () => void;
+  icon?: any;
+};
 
 function Button(props: Props) {
   return (
@@ -13,7 +13,7 @@ function Button(props: Props) {
       {props.label}
       {props.icon}
     </button>
-  )
+  );
 }
 
-export default Button
+export default Button;
