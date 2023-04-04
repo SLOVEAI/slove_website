@@ -1,11 +1,9 @@
 import React from "react";
+import TermsSection from '../../components/TermsSection'
 
 const TermsPage = () => {
   return (
-    <div className="font-clashDisplay text-center py-[3rem]">
-    <h1 className="text-primaryColor_lightBlue text-[4rem]">Coming Soon</h1>
-    <h1 className="text-[2rem] text-white">Terms & Conditions page</h1>
-  </div>
+    <TermsSection />
   )
 };
 
