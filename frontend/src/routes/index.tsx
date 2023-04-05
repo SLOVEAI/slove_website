@@ -12,6 +12,7 @@ import {
   FaqPage,
   PrivacyPage,
   TermsPage,
+  CareerPage,
 } from "../pages";
 
 export enum EnumRoutes {
@@ -25,6 +26,7 @@ export enum EnumRoutes {
   faq = "/faq",
   privacy = "/privacy",
   terms = "/terms",
+  career = "/career",
 }
 
 export const AppRoutes = () => {
@@ -41,6 +43,7 @@ export const AppRoutes = () => {
         <Route path={EnumRoutes.faq} element={<FaqPage />} />
         <Route path={EnumRoutes.privacy} element={<PrivacyPage />} />
         <Route path={EnumRoutes.terms} element={<TermsPage />} />
+        <Route path={EnumRoutes.career} element={<CareerPage />} />
       </Route>
     </Routes>
   );

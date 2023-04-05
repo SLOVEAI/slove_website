@@ -15,7 +15,7 @@ const generalFooterItems = [
   },
   {
     title: "Career",
-    to: "/",
+    to: "/career",
   },
 ];
 

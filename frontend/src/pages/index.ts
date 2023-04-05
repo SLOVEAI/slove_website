@@ -8,3 +8,4 @@ export * from "./cookies_page";
 export * from "./privacy-page";
 export * from "./faq-page";
 export * from "./terms-page";
+export * from "./career-page";

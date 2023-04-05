@@ -19,6 +19,8 @@ module.exports = {
         SemanticColor_yellow: "#F2B200",
         SemanticColor_green: "#008A27",
         SemanticColor_red: "#E00000",
+        neutralColor_grayDarkest: "#303233",
+        neutralColor_grayDark: "#6D7173",
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],

@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 export const WebsiteLayout = () => {
   return (
     <div className="bg-black flex flex-col justify-between">
-      <div className="bg-gradient-to-b from-primaryColor_darkTurquoise/20 to-secondaryColor_darkPurple/20">
+      <div className="bg-gradient-to-b from-primaryColor_darkTurquoise/10 to-secondaryColor_darkPurple/10">
         <Navigation />
         <Outlet />
         <Footer />
