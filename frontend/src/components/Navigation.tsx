@@ -88,12 +88,14 @@ function Navigation() {
             <li>
               <Button
                 label="Login"
+                onClick={() => alert("Not Available Now")}
                 className="py-2 px-5 rounded-xl bg-transparent border border-secondaryColor_lilac text-white"
               />
             </li>
             <li>
               <Button
                 label="Signin"
+                onClick={() => alert("Not Available Now")}
                 className="py-2 px-5 rounded-xl bg-secondaryColor_lilac"
               />
             </li>

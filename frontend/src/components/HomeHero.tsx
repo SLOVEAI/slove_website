@@ -3,8 +3,15 @@ import app_img from "../assets/app_img.png";
 import Button from "./Button";
 import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function HomeHero() {
+  let navigate = useNavigate();
+  const goToContact = () => {
+    let path = `/contact`;
+    navigate(path);
+  };
+
   return (
     <>
       <div className="flex flex-row mt-5 mb-[6rem]">
@@ -19,18 +26,21 @@ function HomeHero() {
           <div className="flex flex-row gap-10">
             <Button
               label="Download on Appstore"
+              onClick={() => alert("Not Available Now")}
               icon={<AiFillApple className="text-white text-2xl" />}
               className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
             />
             <Button
               label="Download on Google Play"
+              onClick={() => alert("Not Available Now")}
               icon={<FaGooglePlay className="text-white text-xl" />}
               className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
             />
           </div>
           <Button
-            label="Sign Up"
-            className="py-4 px-[6.7rem] rounded-full bg-primaryColor_turquoise text-white"
+            label="Contact Us"
+            onClick={goToContact}
+            className="py-4 px-[6rem] rounded-full bg-primaryColor_turquoise text-white"
           />
         </section>
         <section className="mr-[7rem]">
