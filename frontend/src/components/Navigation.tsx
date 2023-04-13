@@ -2,6 +2,9 @@ import React from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
+import { FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
+import { useState } from "react";
 
 const navItems = [
   {
@@ -27,10 +30,12 @@ const navItems = [
 ];
 
 function Navigation() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   return (
     <>
       <nav className="py-12 px-10">
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-row justify-between items-start lg:items-center">
           <div>
             <svg
               width="151"
@@ -74,32 +79,63 @@ function Navigation() {
             </svg>
           </div>
 
-          <ul className="flex flex-row gap-12 items-center">
-            <li className="flex flex-row gap-12 text-secondaryColor_lilac text-manrope">
-              {navItems.map((item, i) => {
-                return (
-                  <Link to={item.to} key={i}>
-                    <h3 className="text-2xl font-clashDisplay">{item.title}</h3>
-                  </Link>
-                );
-              })}
-            </li>
+          <div className="flex flex-col items-end gap-5">
+            <div
+              className="block lg:hidden"
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              <FiMenu className="text-white text-2xl" />
+            </div>
 
-            <li>
-              <Button
-                label="Login"
-                onClick={() => alert("Not Available Now")}
-                className="py-2 px-5 rounded-xl bg-transparent border border-secondaryColor_lilac text-white"
-              />
-            </li>
-            <li>
-              <Button
-                label="Signin"
-                onClick={() => alert("Not Available Now")}
-                className="py-2 px-5 rounded-xl bg-secondaryColor_lilac"
-              />
-            </li>
-          </ul>
+            <div
+              className={
+                isNavExpanded
+                  ? "hidden lg:flex"
+                  : "flex z-40 fixed right-0 top-0 h-screen"
+              }
+            >
+              <ul className="flex flex-col lg:flex-row gap-12 text-right p-[4rem] bg-black lg:bg-transparent lg:p-0 items-end lg:items-center">
+                <div
+                  className="block self-start lg:hidden"
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  <MdClose className="text-white text-2xl" />
+                </div>
+                <li className="flex flex-col lg:flex-row gap-12 text-secondaryColor_lilac text-manrope">
+                  {navItems.map((item, i) => {
+                    return (
+                      <Link to={item.to} key={i}>
+                        <h3 className="text-xl font-clashDisplay">
+                          {item.title}
+                        </h3>
+                      </Link>
+                    );
+                  })}
+                </li>
+
+                <div className="flex flex-row gap-5">
+                  <li>
+                    <Button
+                      label="Login"
+                      onClick={() => alert("Not Available Now")}
+                      className="py-1 px-4 rounded-xl bg-transparent border border-secondaryColor_lilac text-white"
+                    />
+                  </li>
+                  <li>
+                    <Button
+                      label="Signin"
+                      onClick={() => alert("Not Available Now")}
+                      className="py-1 px-4 rounded-xl bg-secondaryColor_lilac"
+                    />
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </>

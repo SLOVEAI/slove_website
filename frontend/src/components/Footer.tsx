@@ -37,7 +37,7 @@ const legalFooterItems = [
 function Footer() {
   return (
     <>
-      <footer className="py-[5rem] mb-[3rem] px-[7rem] flex flex-row justify-between items-center">
+      <footer className="py-[5rem] mt-[5rem] md:mt-0 mb-[3rem] px-[7rem] flex flex-col gap-[4rem] md:gap-0 md:flex-row justify-center sm:justify-between items-center">
         <div>
           <svg
             width="151"
@@ -81,7 +81,7 @@ function Footer() {
           </svg>
         </div>
 
-        <div className="flex flex-row gap-12 items-center font-manrope text-white">
+        <div className="flex flex-row text-center sm:text-left flex-wrap gap-12 items-center font-manrope text-white">
           <section>
             <ul>
               <li className="font-bold pb-6">General</li>
@@ -111,8 +111,8 @@ function Footer() {
             </ul>
           </section>
           <section>
-            <ul className="flex flex-col items-center">
-              <li className="font-bold pb-6">Follow us</li>
+            <ul className="flex flex-row gap-10 align-center sm:gap-0 sm:flex-col items-center">
+              <li className="font-bold pb-6 whitespace-nowrap">Follow us</li>
               <li>
                 <AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2" />
               </li>
