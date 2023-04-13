@@ -30,7 +30,7 @@ const navItems = [
 ];
 
 function Navigation() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(true);
 
   return (
     <>
