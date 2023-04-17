@@ -27,7 +27,7 @@ function HomeSection5() {
 
   return (
     <>
-      <div className="flex flex-col items-center py-10 font-clashDisplay my-[10rem] bg-gradient-to-l to-secondaryColor_purple from-primaryColor_darkTurquoise">
+      <div className="flex flex-col items-center py-10 font-clashDisplay my-[10rem] mx-[5rem] rounded-bl-[6rem] lg:rounded-bl-[12rem] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl bg-gradient-to-l to-secondaryColor_purple from-primaryColor_darkTurquoise">
         <div className="flex flex-row gap-5 mb-[5rem] items-center">
           {testimonials.map((testimonial, testimonialIndex) => (
             <div
@@ -48,7 +48,7 @@ function HomeSection5() {
           "{testimonials[currentIndex].text}"
         </div>
 
-        <div className="flex flex-row gap-1 self-end text-[1rem] md:text-[2rem] mr-[4rem] text-secondaryColor_lilac">
+        <div className="flex flex-col items-center mobile:flex-row gap-1 self-end text-[1rem] md:text-[2rem] ml-[2rem] mr-[2rem] mobile:mr-[4rem] text-secondaryColor_lilac">
           <span>{testimonials[currentIndex].name},</span>
           <span>{testimonials[currentIndex].type}</span>
         </div>

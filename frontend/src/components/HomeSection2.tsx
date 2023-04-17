@@ -42,35 +42,37 @@ function HomeSection2() {
 
   return (
     <>
-      <div className="pt-[3rem] lg:gap-[6rem] flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-1 justify-center items-center px-[10rem]">
-        <div className="flex flex-col col-span-1 row-span-1 mr-0 lg:mr-[2rem] items-center lg:items-start">
-          <h2 className="font-clashDisplay text-center lg:text-left text-white text-[4rem]">
+      <div className="overflow-hidden pt-[3rem] xl:gap-[6rem] flex flex-col xl:grid xl:grid-cols-3 xl:grid-rows-1 justify-center items-center px-[5rem] sm:px-[10rem]">
+        <div className="flex flex-col col-span-1 row-span-1 mr-0 xl:mr-[2rem] items-center xl:items-start">
+          <h2 className="font-clashDisplay text-center xl:text-left text-white text-[2rem] mobile:text-[4rem]">
             How can we help you?
           </h2>
 
-          <div className="flex flex-row lg:hidden whitespace-nowrap bg-white px-8 py-1 rounded-full gap-[3rem] items-center mt-10">
+          <div className="flex flex-row xl:hidden whitespace-nowrap bg-white px-4 mobile:px-8 py-1 rounded-full gap-5 mobile:gap-[3rem] items-center mt-10">
             {targetTypes.map((targetType, targetIndex) => (
               <div
                 key={targetIndex}
                 onClick={() => goToTarget(targetIndex)}
                 className={
                   targetIndex === currentIndex
-                    ? "bg-secondaryColor_darkPurple text-white p-2 px-10 rounded-full"
+                    ? "bg-secondaryColor_darkPurple relative z-10 text-white p-2 px-10 rounded-full"
                     : "text-black"
                 }
               >
-                <h1 className="text-xl cursor-pointer">As {targetType.type}</h1>
+                <h1 className="text-sm mobile:text-md md:text-xl cursor-pointer">
+                  As {targetType.type}
+                </h1>
               </div>
             ))}
           </div>
 
-          <div className="text-white mt-10">
+          <div className="text-white mx-5 mobile:m-0 mt-10">
             <p className="text-[1rem]">{targetTypes[currentIndex].text}</p>
           </div>
         </div>
 
         <div className="flex flex-col col-span-2 row-span-1 mt-10 items-center">
-          <div className="hidden lg:flex flex-row whitespace-nowrap bg-white px-8 py-1 rounded-full gap-[3rem] items-center mt-10">
+          <div className="hidden xl:flex flex-row whitespace-nowrap bg-white px-8 py-1 rounded-full gap-[3rem] items-center mt-10">
             {targetTypes.map((targetType, targetIndex) => (
               <div
                 key={targetIndex}
@@ -85,15 +87,15 @@ function HomeSection2() {
               </div>
             ))}
           </div>
-          <ul className="flex flex-col md:flex-row lg:mt-10">
-            <li className="z-0 mb-[-8rem] md:mb-0 md:mr-[-5rem] 2xl:mr-[-10rem]">
+          <ul className="flex flex-col md:flex-row mt-[-2rem] xl:mt-10">
+            <li className="z-0 mb-[-4rem] sm:mb-[-8rem] md:mb-0 md:mr-[-5rem] 2xl:mr-[-10rem]">
               <img
                 src={targetTypes[currentIndex].advantage1}
                 alt="img"
                 className="md:max-w-xs lg:max-w-[15rem] exeption:max-w-xs 2xl:max-w-xl"
               />
             </li>
-            <li className="z-10 mb-[-8rem] md:mb-0 md:mr-[-5rem] 2xl:mr-[-10rem]">
+            <li className="z-10 mb-[-4rem] sm:mb-[-8rem] md:mb-0 md:mr-[-5rem] 2xl:mr-[-10rem]">
               <img
                 src={targetTypes[currentIndex].advantage2}
                 alt="img"

@@ -86,7 +86,7 @@ function Navigation() {
                 setIsNavExpanded(!isNavExpanded);
               }}
             >
-              <FiMenu className="text-white text-2xl" />
+              <FiMenu className="text-white text-[2rem] mobile:text-[2.5rem]" />
             </div>
 
             <div

@@ -43,6 +43,8 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
 
         exeption: "1107px",
+
+        mobile: "415px",
       },
     },
   },

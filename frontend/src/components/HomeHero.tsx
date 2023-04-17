@@ -14,42 +14,44 @@ function HomeHero() {
 
   return (
     <>
-      <div className="flex flex-row mt-5 mb-[6rem] mx-[7rem] rounded-full px-[5rem] lg:px-0 bg-gradient-to-l from-secondaryColor_purple to-primaryColor_darkTurquoise">
-        <section className="flex flex-col gap-5 items-center lg:items-start lg:mr-[1rem] xl:mr-[5rem] pt-10">
-          <h1 className="font-clashDisplay text-[4rem] text-white">
+      <div className="overflow-hidden flex flex-row items-center mt-5 mb-[6rem] mx-5 mobile:mx-[2rem] sm:mx-[5rem] md:mx-[10rem] rounded-full px-[2rem] mobile:px-[5rem] lg:px-0 py-10 rounded-bl-[6rem] 2xl:rounded-bl-[12rem] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl bg-gradient-to-r from-secondaryColor_darkPurple to-primaryColor_turquoise">
+        <section className="flex flex-col gap-5 ml-1 md:ml-5 lg:ml-[7rem] items-center lg:items-start mr-[1rem] pt-1">
+          <h1 className="font-clashDisplay text-[3.2rem] xl:text-[3.5vw] text-white">
             Bringing the music world together.
           </h1>
-          <p className="font-manrope text-[1.15rem] text-white">
+          <p className="font-manrope text-[1rem] xl:text-[1vw] mr-0 lg:mr-[7rem] text-white">
             Connect venues with musicians and bring the fans to events. That has
             been our mission and we invite you to join us on this ride!
           </p>
-          <img
-            src={app_img}
-            alt="hero_img"
-            className="w-[90%] block self-center lg:hidden"
-          />
-          <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-10">
+          <div className="block xl:hidden w-full">
+            <img
+              src={app_img}
+              alt="hero_img"
+              className="object-fill block self-start xl:hidden"
+            />
+          </div>
+          <div className="flex flex-col self-center xl:self-start lg:flex-row shrink flex-nowrap justify-center my-10 lg:justify-start gap-10">
             <Button
               label="Download on Appstore"
               onClick={() => alert("Not Available Now")}
-              icon={<AiFillApple className="text-white text-2xl" />}
-              className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
+              icon={<AiFillApple className="text-black text-2xl" />}
+              className="py-3 px-7 text-[1rem] xl:text-[1vw] whitespace-nowrap rounded-full bg-white text-black items-center flex flex-row gap-2"
             />
             <Button
               label="Download on Google Play"
               onClick={() => alert("Not Available Now")}
-              icon={<FaGooglePlay className="text-white text-xl" />}
-              className="py-4 px-10 rounded-full bg-black text-white items-center flex flex-row gap-2"
-            />
-            <Button
-              label="Contact Us"
-              onClick={goToContact}
-              className="py-4 px-[6rem] rounded-full bg-primaryColor_turquoise text-white"
+              icon={<FaGooglePlay className="text-black text-xl" />}
+              className="py-3 px-7 text-[1rem] xl:text-[1vw] whitespace-nowrap rounded-full bg-white text-black items-center flex flex-row gap-2"
             />
           </div>
+          <Button
+            label="Contact Us"
+            onClick={goToContact}
+            className="self-center xl:self-start py-3 px-[5rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white"
+          />
         </section>
-        <section className="hidden lg:block">
-          <img src={app_img} alt="hero_img" className="w-full mr-[7rem]" />
+        <section className="hidden xl:block">
+          <img src={app_img} alt="hero_img" className="w-auto mr-[3rem]" />
         </section>
       </div>
     </>
