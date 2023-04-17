@@ -66,7 +66,7 @@ function HomeSection2() {
             ))}
           </div>
 
-          <div className="text-white mx-5 mobile:m-0 mt-10">
+          <div className="text-white mx-5 mobile:mx-0 mt-10">
             <p className="text-[1rem]">{targetTypes[currentIndex].text}</p>
           </div>
         </div>

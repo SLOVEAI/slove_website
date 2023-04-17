@@ -3,7 +3,11 @@ import React from "react";
 function AboutSection() {
   return (
     <>
-      <div className="flex flex-col font-manrope px-[7rem] gap-5 mb-[7rem] mt-[3rem]">
+      <div className="font-clashDisplay text-center py-[3rem]">
+        <h1 className="text-primaryColor_lightBlue text-[4rem]">Coming Soon</h1>
+        <h1 className="text-[2rem] text-white">About page</h1>
+      </div>
+      {/* <div className="flex flex-col font-manrope px-[7rem] gap-5 mb-[7rem] mt-[3rem]">
         <h1 className="self-center font-clashDisplay text-[4rem] text-primaryColor_lightTurquoise">
           About
         </h1>
@@ -71,7 +75,7 @@ function AboutSection() {
             </p>
           </div>
         </section>
-      </div>
+      </div> */}
     </>
   );
 }

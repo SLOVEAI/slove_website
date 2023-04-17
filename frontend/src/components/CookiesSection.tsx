@@ -3,9 +3,9 @@ import React from "react";
 function CookiesSection() {
   return (
     <>
-      <div className="font-manrope flex flex-col items-center gap-10 text-white mt-5 mb-[10rem]">
-        <section className="flex flex-col px-[15rem]">
-          <h1 className="font-clashDisplay text-[4rem] text-primaryColor_lightBlue mb-[4rem] self-center">
+      <div className="font-manrope flex flex-col items-center gap-10 text-white mt-5 mb-[5rem] mobile:mb-[10rem]">
+        <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[15rem]">
+          <h1 className="font-clashDisplay text-[2.8rem] mobile:text-[3.5rem] text-primaryColor_lightBlue mb-[4rem] self-center">
             Cookie Policy
           </h1>
           <p>
@@ -17,7 +17,7 @@ function CookiesSection() {
           </p>
         </section>
 
-        <section className="flex flex-col px-[15rem]">
+        <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[15rem]">
           <h2 className="font-clashDisplay text-[2rem] mb-[4rem] self-center">
             What are Cookies?
           </h2>
@@ -31,7 +31,7 @@ function CookiesSection() {
           </p>
         </section>
 
-        <section className="flex flex-col px-[15rem]">
+        <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[15rem]">
           <h2 className="font-clashDisplay text-[2rem] mb-[4rem] self-center">
             What Cookies do we use?
           </h2>
@@ -59,7 +59,7 @@ function CookiesSection() {
           </ul>
         </section>
 
-        <section className="flex flex-col px-[15rem]">
+        <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[15rem]">
           <h2 className="font-clashDisplay text-[2rem] mb-[4rem] self-center">
             Third-Party Cookies
           </h2>

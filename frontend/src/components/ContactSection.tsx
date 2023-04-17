@@ -3,11 +3,11 @@ import React from "react";
 function ContactSection() {
   return (
     <>
-      <div className="font-manrope text-white gap-10 flex flex-col items-center">
-        <h1 className="font-clashDisplay text-[4rem] text-primaryColor_lightBlue mb-[1rem]">
+      <div className="font-manrope text-white gap-5 mobile:gap-10 flex flex-col items-center">
+        <h1 className="font-clashDisplay text-[4rem] text-primaryColor_lightBlue m-0 mobile:mb-[1rem]">
           Contact
         </h1>
-        <span className="px-[30rem] mb-[2rem]">
+        <span className="px-[2rem] sm:px-[10rem] lg:px-[20rem] xl:px-[30rem] mb-[2rem]">
           If you want to be one of our app testers or ask questions we are happy
           to answer them! Please contact us through the form or at
           contact@slove.live.

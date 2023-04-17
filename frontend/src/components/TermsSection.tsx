@@ -3,9 +3,9 @@ import React from "react";
 function TermsSection() {
   return (
     <>
-      <div className="font-manrope flex flex-col items-center gap-10 text-white mt-5 mb-[10rem]">
-        <section className="flex flex-col px-[15rem]">
-          <h1 className="font-clashDisplay text-[4rem] text-primaryColor_lightBlue mb-[4rem] self-center">
+      <div className="font-manrope flex flex-col items-center gap-10 text-white mt-5 mb-[5rem] mobile:mb-[10rem]">
+        <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] px-[15rem]">
+          <h1 className="font-clashDisplay text-[2.2rem] mobile:text-[3.5rem] text-primaryColor_lightBlue mb-[2rem] mobile:mb-[4rem] self-center">
             Terms & Conditions
           </h1>
           <p>
@@ -15,7 +15,7 @@ function TermsSection() {
           </p>
         </section>
 
-        <section className="flex flex-col px-[15rem]">
+        <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] px-[15rem]">
           <h2 className="font-clashDisplay text-[2rem] mb-[4rem] self-center">
             Use of the website
           </h2>
@@ -47,7 +47,7 @@ function TermsSection() {
           </ul>
         </section>
 
-        <section className="flex flex-col px-[15rem]">
+        <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] px-[15rem]">
           <h2 className="font-clashDisplay text-[2rem] mb-[4rem] self-center">
             Intellectual Property
           </h2>
@@ -59,7 +59,7 @@ function TermsSection() {
             website without our express written permission.
           </p>
         </section>
-        <section className="flex flex-col px-[15rem]">
+        <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] px-[15rem]">
           <h2 className="font-clashDisplay text-[2rem] mb-[4rem] self-center">
             Disclamer of Warranties
           </h2>
