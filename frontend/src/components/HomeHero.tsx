@@ -35,19 +35,19 @@ function HomeHero() {
               label="Download on Appstore"
               onClick={() => alert("Not Available Now")}
               icon={<AiFillApple className="text-black text-2xl" />}
-              className="py-3 px-7 text-[1rem] xl:text-[1vw] whitespace-nowrap rounded-full bg-white text-black items-center flex flex-row gap-2"
+              className="py-3 px-7 text-[1rem] xl:text-[1vw] whitespace-nowrap rounded-full bg-white text-black border border-black items-center flex flex-row gap-2 hover:bg-gray-100 ease-in-out"
             />
             <Button
               label="Download on Google Play"
               onClick={() => alert("Not Available Now")}
               icon={<FaGooglePlay className="text-black text-xl" />}
-              className="py-3 px-7 text-[1rem] xl:text-[1vw] whitespace-nowrap rounded-full bg-white text-black items-center flex flex-row gap-2"
+              className="py-3 px-7 text-[1rem] xl:text-[1vw] whitespace-nowrap rounded-full bg-white text-black border border-black items-center flex flex-row gap-2 hover:bg-gray-100 ease-in-out"
             />
           </div>
           <Button
             label="Contact Us"
             onClick={goToContact}
-            className="self-center xl:self-start py-3 px-[5rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white"
+            className="self-center xl:self-start py-3 px-[5rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white border border-black hover:bg-primaryColor_darkTurquoise transition ease-in-out"
           />
         </section>
         <section className="hidden xl:block">

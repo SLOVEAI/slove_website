@@ -35,7 +35,7 @@ function HomeSection5() {
               onClick={() => goToTarget(testimonialIndex)}
               className={
                 testimonialIndex === currentIndex
-                  ? "bg-secondaryColor_purple w-4 h-4 rounded-full"
+                  ? "bg-secondaryColor_purple w-4 h-4 rounded-full duration-700 ease-in-out fade"
                   : "border bg-transparent border-white w-3 h-3 rounded-full"
               }
             >

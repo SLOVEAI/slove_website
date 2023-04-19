@@ -49,7 +49,7 @@ function ContactSection() {
 
           <button
             type="submit"
-            className="mt-10 py-4 px-10 rounded-full bg-primaryColor_turquoise text-white"
+            className="mt-10 py-4 px-10 rounded-full bg-primaryColor_turquoise text-white hover:bg-primaryColor_darkTurquoise transition ease-in-out"
           >
             Send
           </button>

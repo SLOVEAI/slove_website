@@ -89,7 +89,9 @@ function Footer() {
                 {generalFooterItems.map((item, i) => {
                   return (
                     <Link to={item.to} key={i}>
-                      <h3 className="mb-2">{item.title}</h3>
+                      <h3 className="mb-2 hover:text-secondaryColor_purple transition ease-in-out">
+                        {item.title}
+                      </h3>
                     </Link>
                   );
                 })}
@@ -103,7 +105,9 @@ function Footer() {
                 {legalFooterItems.map((item, i) => {
                   return (
                     <Link to={item.to} key={i}>
-                      <h3 className="mb-2">{item.title}</h3>
+                      <h3 className="mb-2 hover:text-secondaryColor_purple transition ease-in-out">
+                        {item.title}
+                      </h3>
                     </Link>
                   );
                 })}
@@ -114,13 +118,13 @@ function Footer() {
             <ul className="flex flex-row gap-10 align-center sm:gap-0 sm:flex-col items-center">
               <li className="font-bold pb-6 whitespace-nowrap">Follow us</li>
               <li>
-                <AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2" />
+                <AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
               </li>
               <li>
-                <FaFacebook className="text-2xl text-secondaryColor_lilac mb-2" />
+                <FaFacebook className="text-2xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
               </li>
               <li>
-                <FaLinkedinIn className="text-3xl text-secondaryColor_lilac mb-2" />
+                <FaLinkedinIn className="text-3xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
               </li>
             </ul>
           </section>

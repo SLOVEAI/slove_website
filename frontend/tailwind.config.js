@@ -48,5 +48,9 @@ module.exports = {
       },
     },
   },
+  variants: {
+    // Add variants as needed
+    scrollSnapType: ["responsive"],
+  },
   plugins: [],
 };

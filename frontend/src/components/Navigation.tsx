@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const navItems = [
   {
@@ -32,11 +33,17 @@ const navItems = [
 function Navigation() {
   const [isNavExpanded, setIsNavExpanded] = useState(true);
 
+  let navigate = useNavigate();
+  const goToHome = () => {
+    let path = `/`;
+    navigate(path);
+  };
+
   return (
     <>
       <nav className="py-12 px-10">
         <div className="flex flex-row justify-between items-start lg:items-center">
-          <div>
+          <button onClick={goToHome}>
             <svg
               width="151"
               height="39"
@@ -77,7 +84,7 @@ function Navigation() {
                 fill="white"
               />
             </svg>
-          </div>
+          </button>
 
           <div className="flex flex-col items-end gap-5">
             <div
@@ -86,7 +93,7 @@ function Navigation() {
                 setIsNavExpanded(!isNavExpanded);
               }}
             >
-              <FiMenu className="text-white text-[2rem] mobile:text-[2.5rem]" />
+              <FiMenu className="cursor-pointer text-white text-[2rem] mobile:text-[2.5rem] hover:text-secondaryColor_purple transition ease-in-out" />
             </div>
 
             <div
@@ -103,13 +110,13 @@ function Navigation() {
                     setIsNavExpanded(!isNavExpanded);
                   }}
                 >
-                  <MdClose className="text-white text-2xl" />
+                  <MdClose className="cursor-pointer text-white text-2xl hover:text-secondaryColor_purple transition ease-in-out" />
                 </div>
                 <li className="flex flex-col lg:flex-row gap-12 text-secondaryColor_lilac text-manrope">
                   {navItems.map((item, i) => {
                     return (
                       <Link to={item.to} key={i}>
-                        <h3 className="text-xl font-clashDisplay">
+                        <h3 className="text-xl font-clashDisplay hover:text-white transition ease-in-out">
                           {item.title}
                         </h3>
                       </Link>
@@ -122,14 +129,14 @@ function Navigation() {
                     <Button
                       label="Login"
                       onClick={() => alert("Not Available Now")}
-                      className="py-1 px-4 rounded-xl bg-transparent border border-secondaryColor_lilac text-white"
+                      className="py-1 px-4 rounded-xl bg-transparent border border-secondaryColor_lilac text-white hover:border-white transition ease-in-out"
                     />
                   </li>
                   <li>
                     <Button
                       label="Signin"
                       onClick={() => alert("Not Available Now")}
-                      className="py-1 px-4 rounded-xl bg-secondaryColor_lilac"
+                      className="py-1 px-4 rounded-xl bg-secondaryColor_lilac hover:bg-secondaryColor_lightLilac transition ease-in-out"
                     />
                   </li>
                 </div>
