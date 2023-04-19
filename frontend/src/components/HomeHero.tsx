@@ -1,9 +1,11 @@
-import React from "react";
+import { useEffect } from "react";
 import app_img from "../assets/app_img.png";
 import Button from "./Button";
 import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function HomeHero() {
   let navigate = useNavigate();
@@ -12,9 +14,21 @@ function HomeHero() {
     navigate(path);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      debounceDelay: 50,
+      mirror: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <>
-      <div className="overflow-hidden flex flex-row items-center mt-5 mb-[6rem] mx-5 mobile:mx-[2rem] sm:mx-[5rem] md:mx-[10rem] rounded-full px-[2rem] mobile:px-[5rem] lg:px-0 py-10 rounded-bl-[6rem] 2xl:rounded-bl-[12rem] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl bg-gradient-to-r from-secondaryColor_darkPurple to-primaryColor_turquoise">
+      <div
+        className="overflow-hidden flex flex-row items-center mt-5 mb-[6rem] mx-5 mobile:mx-[2rem] sm:mx-[5rem] md:mx-[10rem] rounded-full px-[2rem] mobile:px-[5rem] lg:px-0 py-10 rounded-bl-[6rem] 2xl:rounded-bl-[12rem] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl bg-gradient-to-r from-secondaryColor_darkPurple to-primaryColor_turquoise"
+        data-aos="fade-left"
+      >
         <section className="flex flex-col gap-5 ml-1 md:ml-5 lg:ml-[7rem] items-center lg:items-start mr-[1rem] pt-1">
           <h1 className="font-clashDisplay text-[3.2rem] xl:text-[3.5vw] text-white">
             Bringing the music world together.

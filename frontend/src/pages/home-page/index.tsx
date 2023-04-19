@@ -7,7 +7,7 @@ import HomeSection5 from "../../components/HomeSection5";
 
 const HomePage = () => {
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth overflow-hidden">
       <HomeHero />
       <HomeSection2 />
       <HomeSection3 />

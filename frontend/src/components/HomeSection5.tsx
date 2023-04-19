@@ -1,6 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function HomeSection5() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      debounceDelay: 50,
+      mirror: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   const testimonials = [
     {
       name: "Linda",
@@ -27,7 +38,10 @@ function HomeSection5() {
 
   return (
     <>
-      <div className="flex flex-col items-center py-10 font-clashDisplay my-[10rem] mx-[5rem] rounded-bl-[6rem] lg:rounded-bl-[12rem] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl bg-gradient-to-l from-secondaryColor_darkPurple to-primaryColor_turquoise">
+      <div
+        className="flex flex-col items-center py-10 font-clashDisplay my-[10rem] mx-[5rem] rounded-bl-[6rem] lg:rounded-bl-[12rem] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl bg-gradient-to-l from-secondaryColor_darkPurple to-primaryColor_turquoise"
+        data-aos="fade-left"
+      >
         <div className="flex flex-row gap-5 mb-[5rem] items-center">
           {testimonials.map((testimonial, testimonialIndex) => (
             <div

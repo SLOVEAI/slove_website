@@ -1,10 +1,24 @@
-import React from "react";
+import { useEffect } from "react";
 import model from "../assets/diagram.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function HomeSection4() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      debounceDelay: 50,
+      mirror: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <>
-      <div className="flex flex-col flex-col-reverse gap-10 items-center lg:gap-0 lg:grid grid-cols-2 grid-rows-1 px-10 md:px-[10rem] mt-[10rem]">
+      <div
+        className="flex flex-col flex-col-reverse gap-10 items-center lg:gap-0 lg:grid grid-cols-2 grid-rows-1 px-10 md:px-[10rem] mt-[10rem]"
+        data-aos="fade-right"
+      >
         <div className="ml-10 md:m-0 col-span-1 self-center row-span-1">
           <img src={model} alt="model.img" className="w-[85%] sm:w-auto ml-3" />
         </div>

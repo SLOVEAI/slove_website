@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import musician_advantage_1 from "../assets/musician_advantage_1.png";
 import musician_advantage_2 from "../assets/musician_advantage_2.png";
 import musician_advantage_3 from "../assets/musician_advantage_3.png";
@@ -8,8 +8,19 @@ import venue_advantage_3 from "../assets/venue_advantage_3.png";
 import fan_advantage_1 from "../assets/fan_advantage_1.png";
 import fan_advantage_2 from "../assets/fan_advantage_2.png";
 import fan_advantage_3 from "../assets/fan_advantage_3.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function HomeSection2() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      debounceDelay: 50,
+      mirror: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   const targetTypes = [
     {
       type: "musician",
@@ -42,7 +53,10 @@ function HomeSection2() {
 
   return (
     <>
-      <div className="overflow-hidden pt-[3rem] xl:gap-[6rem] flex flex-col xl:grid xl:grid-cols-3 xl:grid-rows-1 justify-center items-center px-[5rem] sm:px-[10rem]">
+      <div
+        className="overflow-hidden pt-[3rem] xl:gap-[6rem] flex flex-col xl:grid xl:grid-cols-3 xl:grid-rows-1 justify-center items-center px-[5rem] sm:px-[10rem]"
+        data-aos="fade-right"
+      >
         <div className="flex flex-col col-span-1 row-span-1 mr-0 xl:mr-[2rem] items-center xl:items-start">
           <h2 className="font-clashDisplay text-center xl:text-left text-white text-[2rem] mobile:text-[4rem]">
             How can we help you?
