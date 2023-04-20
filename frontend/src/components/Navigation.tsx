@@ -134,7 +134,7 @@ function Navigation() {
                   </li>
                   <li>
                     <Button
-                      label="Signin"
+                      label="Sign in"
                       onClick={() => alert("Not Available Now")}
                       className="py-1 px-4 rounded-xl bg-secondaryColor_lilac hover:bg-secondaryColor_lightLilac transition ease-in-out"
                     />

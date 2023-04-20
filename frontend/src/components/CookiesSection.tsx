@@ -1,9 +1,23 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function CookiesSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      debounceDelay: 50,
+      mirror: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <>
-      <div className="font-manrope flex flex-col items-center gap-10 text-white mt-5 mb-[5rem] mobile:mb-[10rem]">
+      <div
+        className="font-manrope flex flex-col items-center gap-10 text-white mt-5 mb-[5rem] mobile:mb-[10rem]"
+        data-aos="fade-left"
+      >
         <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[15rem]">
           <h1 className="font-clashDisplay text-[2.8rem] mobile:text-[3.5rem] text-primaryColor_lightBlue mb-[4rem] self-center">
             Cookie Policy
@@ -70,6 +84,11 @@ function CookiesSection() {
             social media features.
           </p>
         </section>
+        {/* <section className="flex flex-col md:flex-row gap-[2rem]">
+          <Card label="Build connections" icon={TestPNG} />
+          <Card label="Build connections" icon={TestPNG} />
+          <Card label="Build connections" icon={TestPNG} />
+        </section> */}
       </div>
     </>
   );

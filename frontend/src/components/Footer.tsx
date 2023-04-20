@@ -117,15 +117,21 @@ function Footer() {
           <section>
             <ul className="flex flex-row gap-10 align-center sm:gap-0 sm:flex-col items-center">
               <li className="font-bold pb-6 whitespace-nowrap">Follow us</li>
-              <li>
-                <AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
-              </li>
-              <li>
-                <FaFacebook className="text-2xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
-              </li>
-              <li>
-                <FaLinkedinIn className="text-3xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
-              </li>
+              <a href="https://www.instagram.com/slove_ai/">
+                <li>
+                  <AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
+                </li>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100091346455842">
+                <li>
+                  <FaFacebook className="text-2xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/company/sloveai/">
+                <li>
+                  <FaLinkedinIn className="text-3xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
+                </li>
+              </a>
             </ul>
           </section>
         </div>

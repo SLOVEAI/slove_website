@@ -2,7 +2,11 @@ import React from "react";
 import CookiesSection from "../../components/CookiesSection";
 
 const CookiesPage = () => {
-  return <CookiesSection />;
+  return (
+    <div className="scroll-smooth overflow-hidden">
+      <CookiesSection />
+    </div>
+  );
 };
 
 export { CookiesPage };

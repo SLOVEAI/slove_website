@@ -24,21 +24,21 @@ function HomeSection4() {
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-center font-manrope text-[1rem] text-white font-semibold ml-2 sm:ml-[4rem]">
-          <h2 className="font-clashDisplay text-center md:text-left text-secondaryColor_lilac text-[3.5rem]">
+          <h2 className="font-clashDisplay text-center md:text-left text-white text-[3.5rem]">
             How the magic works?
           </h2>
           <div className="mx-10 mt-5 md:m-0">
             <p className="mb-4">
-              We at Slove like transparancy. So what happens behind the scenes
-              is, that based on the preferences of the three major players of
-              the live music industry we connect them based on a smart (yes, we
-              are quite proud it) algorithm.
+              Slove values transparency. That’s why we’d like to share what’s
+              happening behind the scenes.
             </p>
             <p>
-              Through that, we open up tremendous opportunities. Opportunities,
-              that are beyond economic benefits such as artist development,
-              mental well-being, marketing and PR for venues & music related
-              businesses just to name a few.
+              We connect the three major players in the live music industry
+              based on their preferences. This brings them together in one
+              place, providing each with relevant and valuable information,
+              specifically targeted for them. This way we open up numerous new
+              and exciting opportunities that will help musicians and venues
+              take a fresh breathe of the local live music scene!
             </p>
           </div>
         </div>

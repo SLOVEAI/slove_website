@@ -1,9 +1,23 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ContactSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      debounceDelay: 50,
+      mirror: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <>
-      <div className="font-manrope text-white gap-5 mobile:gap-10 flex flex-col items-center">
+      <div
+        className="font-manrope text-white gap-5 mobile:gap-10 flex flex-col items-center"
+        data-aos="fade-left"
+      >
         <h1 className="font-clashDisplay text-[4rem] text-primaryColor_lightBlue m-0 mobile:mb-[1rem]">
           Contact
         </h1>

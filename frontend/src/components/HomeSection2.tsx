@@ -62,20 +62,18 @@ function HomeSection2() {
             How can we help you?
           </h2>
 
-          <div className="flex flex-row xl:hidden whitespace-nowrap bg-white px-4 mobile:px-8 py-1 rounded-full gap-5 mobile:gap-[3rem] items-center mt-10">
+          <div className="flex flex-row flex-1 xl:hidden whitespace-nowrap bg-white px-4 mobile:px-8 py-1 rounded-full gap-5 mobile:gap-[3rem] justify-center items-center mt-10">
             {targetTypes.map((targetType, targetIndex) => (
               <div
                 key={targetIndex}
                 onClick={() => goToTarget(targetIndex)}
                 className={
                   targetIndex === currentIndex
-                    ? "bg-secondaryColor_darkPurple relative z-10 text-white p-2 px-10 rounded-full"
-                    : "text-black"
+                    ? "flex-1 bg-secondaryColor_darkPurple relative z-10 text-white p-2 px-10 rounded-full text-sm mobile:text-md md:text-xl cursor-pointer"
+                    : "flex-1 text-black text-sm mobile:text-md md:text-xl cursor-pointer"
                 }
               >
-                <h1 className="text-sm mobile:text-md md:text-xl cursor-pointer">
-                  As {targetType.type}
-                </h1>
+                {targetType.type}
               </div>
             ))}
           </div>

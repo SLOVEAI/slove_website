@@ -31,7 +31,7 @@ function HomeHero() {
       >
         <section className="flex flex-col gap-5 ml-1 md:ml-5 lg:ml-[7rem] items-center lg:items-start mr-[1rem] pt-1">
           <h1 className="font-clashDisplay text-[3.2rem] xl:text-[3.5vw] text-white">
-            Bringing the music world together.
+            Bring the world of live music together.
           </h1>
           <p className="font-manrope text-[1rem] xl:text-[1vw] mr-0 lg:mr-[7rem] text-white">
             Connect venues with musicians and bring the fans to events. That has
