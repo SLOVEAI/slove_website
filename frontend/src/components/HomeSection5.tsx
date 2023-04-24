@@ -2,7 +2,33 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+let testimonialIndex = 0;
+
+const testimonials = [
+  {
+    name: "Linda",
+    type: "singer songwriter",
+    text: "This is gonna help me fall asleep big time!",
+  },
+  {
+    name: "Smith",
+    type: "Fan",
+    text: "This platform will make the local booking experience easier!",
+  },
+  {
+    name: "Mary",
+    type: "Venue owner",
+    text: "This will help bring back the live music!",
+  },
+];
+
 function HomeSection5() {
+  const startSlider = () => {
+    setInterval(() => {
+      handleOnNextClick();
+    }, 3000);
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -10,25 +36,15 @@ function HomeSection5() {
       mirror: true,
       easing: "ease-out-cubic",
     });
+
+    startSlider();
   }, []);
 
-  const testimonials = [
-    {
-      name: "Linda",
-      type: "singer songwriter",
-      text: "This is gonna help me fall asleep big time!",
-    },
-    {
-      name: "Smith",
-      type: "Fan",
-      text: "This platform will make the local booking experience easier!",
-    },
-    {
-      name: "Mary",
-      type: "Venue owner",
-      text: "This will help bring back the live music!",
-    },
-  ];
+  const handleOnNextClick = () => {
+    const sliderLength = testimonials.length;
+    testimonialIndex = (sliderLength + testimonialIndex - 1) % sliderLength;
+    setCurrentIndex(testimonialIndex);
+  };
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
