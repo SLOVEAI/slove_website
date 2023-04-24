@@ -1,15 +1,19 @@
 import { useState, useEffect } from "react";
-import musician_advantage_1 from "../assets/musician_advantage_1.png";
-import musician_advantage_2 from "../assets/musician_advantage_2.png";
-import musician_advantage_3 from "../assets/musician_advantage_3.png";
-import venue_advantage_1 from "../assets/venue_advantage_1.png";
-import venue_advantage_2 from "../assets/venue_advantage_2.png";
-import venue_advantage_3 from "../assets/venue_advantage_3.png";
-import fan_advantage_1 from "../assets/fan_advantage_1.png";
-import fan_advantage_2 from "../assets/fan_advantage_2.png";
-import fan_advantage_3 from "../assets/fan_advantage_3.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Card from "./Card";
+
+import money from "../assets/money.png";
+import venue from "../assets/venue.png";
+import connections from "../assets/connections.png";
+
+import artist from "../assets/artist.png";
+import insights from "../assets/insights.png";
+import promotion from "../assets/promotion.png";
+
+import recommendation from "../assets/recommendation.png";
+import singer from "../assets/singer.png";
+import ticket from "../assets/ticket.png";
 
 function HomeSection2() {
   useEffect(() => {
@@ -25,23 +29,27 @@ function HomeSection2() {
     {
       type: "musician",
       text: "Imagine a way to find gigs stress free, from anywhere you’d like without having to put yourself out there over and over again. Well, we came up with a solution so that you can focus on your music, let it speak for itself, and we'll take care of the rest. In other words: we got you!",
-      advantage1: musician_advantage_1,
-      advantage2: musician_advantage_2,
-      advantage3: musician_advantage_3,
+      advantage1: <Card label="Get booked easily" icon={venue} />,
+      advantage2: <Card label="Build connections" icon={connections} />,
+      advantage3: <Card label="More gigs, more income" icon={money} />,
     },
     {
       type: "venue",
       text: "We know that booking can be quite a hassle. That’s why we came up with a solution to make it smoother. On top we also not only recommend you new artists you’ll like, we will also provide you with valuable insights about what is currently happening in the industry and the local music scene.",
-      advantage1: venue_advantage_1,
-      advantage2: venue_advantage_2,
-      advantage3: venue_advantage_3,
+      advantage1: <Card label="Discover local talent" icon={artist} />,
+      advantage2: <Card label="Promote your events" icon={promotion} />,
+      advantage3: (
+        <Card label="Insights on the local music scene" icon={insights} />
+      ),
     },
     {
-      type: "fan",
+      type: "audience",
       text: "Have you ever experienced discovering a new artist or band and then learn, that you just missed their concert? Won’t happen again with Slove! We’ll not only recommend you new artists, we’ll also recommend you events. Cherry on top: the tickets are bought in the same go!",
-      advantage1: fan_advantage_1,
-      advantage2: fan_advantage_2,
-      advantage3: fan_advantage_3,
+      advantage1: <Card label="Easy ticket access" icon={ticket} />,
+      advantage2: <Card label="Discover local artists" icon={singer} />,
+      advantage3: (
+        <Card label="Get local event recommendations" icon={recommendation} />
+      ),
     },
   ];
 
@@ -95,32 +103,14 @@ function HomeSection2() {
                     : "text-black"
                 }
               >
-                <h1 className="text-xl cursor-pointer">As {targetType.type}</h1>
+                <h1 className="text-xl cursor-pointer">{targetType.type}</h1>
               </div>
             ))}
           </div>
-          <ul className="flex flex-col md:flex-row mt-[-2rem] xl:mt-10">
-            <li className="z-0 mb-[-4rem] sm:mb-[-8rem] md:mb-0 md:mr-[-5rem] 2xl:mr-[-10rem]">
-              <img
-                src={targetTypes[currentIndex].advantage1}
-                alt="img"
-                className="md:max-w-xs lg:max-w-[15rem] exeption:max-w-xs 2xl:max-w-xl"
-              />
-            </li>
-            <li className="z-10 mb-[-4rem] sm:mb-[-8rem] md:mb-0 md:mr-[-5rem] 2xl:mr-[-10rem]">
-              <img
-                src={targetTypes[currentIndex].advantage2}
-                alt="img"
-                className="md:max-w-xs lg:max-w-[15rem] exeption:max-w-xs 2xl:max-w-xl"
-              />
-            </li>
-            <li className="z-20">
-              <img
-                src={targetTypes[currentIndex].advantage3}
-                alt="img"
-                className="md:max-w-xs lg:max-w-[15rem] exeption:max-w-xs 2xl:max-w-xl"
-              />
-            </li>
+          <ul className="flex flex-col lg:flex-row items-center text-center mt-10 gap-12 lg:gap-6 mb-5">
+            <li>{targetTypes[currentIndex].advantage1}</li>
+            <li>{targetTypes[currentIndex].advantage2}</li>
+            <li>{targetTypes[currentIndex].advantage3}</li>
           </ul>
         </div>
       </div>

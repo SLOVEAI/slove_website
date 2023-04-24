@@ -61,7 +61,7 @@ function HomeHero() {
           <Button
             label="Contact Us"
             onClick={goToContact}
-            className="self-center xl:self-start py-3 px-[5rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white border border-black hover:bg-primaryColor_darkTurquoise transition ease-in-out"
+            className="self-center mt-[-2rem] xl:self-start py-3 px-[5rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white border border-black hover:bg-primaryColor_darkTurquoise transition ease-in-out"
           />
         </section>
         <section className="hidden xl:block">
