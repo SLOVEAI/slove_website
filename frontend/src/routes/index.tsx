@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { WebsiteLayout } from "../layouts/WebsiteLayout";
+import { LoginSignupLayout } from "../layouts/LoginSignupLayout";
 import {
   HomePage,
   AboutPage,
@@ -13,6 +14,8 @@ import {
   PrivacyPage,
   TermsPage,
   CareerPage,
+  LoginPage,
+  SignupPage,
 } from "../pages";
 
 export enum EnumRoutes {
@@ -27,6 +30,8 @@ export enum EnumRoutes {
   privacy = "/privacy",
   terms = "/terms",
   career = "/career",
+  login = "/login",
+  signup = "/signup",
 }
 
 export const AppRoutes = () => {
@@ -44,6 +49,10 @@ export const AppRoutes = () => {
         <Route path={EnumRoutes.privacy} element={<PrivacyPage />} />
         <Route path={EnumRoutes.terms} element={<TermsPage />} />
         <Route path={EnumRoutes.career} element={<CareerPage />} />
+      </Route>
+      <Route element={<LoginSignupLayout />}>
+        <Route path={EnumRoutes.login} element={<LoginPage />} />
+        <Route path={EnumRoutes.signup} element={<SignupPage />} />
       </Route>
     </Routes>
   );

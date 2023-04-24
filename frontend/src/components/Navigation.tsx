@@ -39,6 +39,16 @@ function Navigation() {
     navigate(path);
   };
 
+  const goToLogin = () => {
+    let path = `/login`;
+    navigate(path);
+  };
+
+  const goToSignup = () => {
+    let path = `/signup`;
+    navigate(path);
+  };
+
   return (
     <>
       <nav className="py-12 px-10">
@@ -128,14 +138,14 @@ function Navigation() {
                   <li>
                     <Button
                       label="Login"
-                      onClick={() => alert("Not Available Now")}
+                      onClick={goToLogin}
                       className="py-1 px-4 rounded-xl bg-transparent border border-secondaryColor_lilac text-white hover:border-white transition ease-in-out"
                     />
                   </li>
                   <li>
                     <Button
-                      label="Sign in"
-                      onClick={() => alert("Not Available Now")}
+                      label="Sign up"
+                      onClick={goToSignup}
                       className="py-1 px-4 rounded-xl bg-secondaryColor_lilac hover:bg-secondaryColor_lightLilac transition ease-in-out"
                     />
                   </li>
