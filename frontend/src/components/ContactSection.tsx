@@ -27,7 +27,7 @@ function ContactSection() {
           contact@slove.live.
         </span>
         <form
-          action="https://formsubmit.co/60cde7f61f3d8e8b9e071d8010a7e953"
+          action="https://formsubmit.co/2031a6e59570361b610ba0001395ee70"
           className="flex flex-col gap-2"
           method="POST"
         >
