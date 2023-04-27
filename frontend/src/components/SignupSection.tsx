@@ -35,7 +35,7 @@ function SignupSection() {
           Sign Up
         </h1>
         <form
-          action="#"
+          action={`/chooseArea`}
           className="flex flex-col gap-2 mt-[4rem] mobile:mt-0 px-[5rem] sm:px-[10rem]"
         >
           <label htmlFor="email" className="ml-2">

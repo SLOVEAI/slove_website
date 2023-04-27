@@ -11,3 +11,7 @@ export * from "./terms-page";
 export * from "./career-page";
 export * from "./login-page";
 export * from "./signup-page";
+export * from "./chooseArea-page";
+export * from "./musicianProfile-page";
+export * from "./fanProfile-page";
+export * from "./venueProfile-page";

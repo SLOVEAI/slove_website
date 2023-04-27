@@ -16,6 +16,10 @@ import {
   CareerPage,
   LoginPage,
   SignupPage,
+  ChooseAreaPage,
+  MusicianProfilePage,
+  FanProfilePage,
+  VenueProfilePage,
 } from "../pages";
 
 export enum EnumRoutes {
@@ -32,6 +36,10 @@ export enum EnumRoutes {
   career = "/career",
   login = "/login",
   signup = "/signup",
+  chooseArea = "/chooseArea",
+  musicianProfile = "/musicianProfile",
+  fanProfile = "/fanProfile",
+  venueProfile = "/venueProfile",
 }
 
 export const AppRoutes = () => {
@@ -53,6 +61,13 @@ export const AppRoutes = () => {
       <Route element={<LoginSignupLayout />}>
         <Route path={EnumRoutes.login} element={<LoginPage />} />
         <Route path={EnumRoutes.signup} element={<SignupPage />} />
+        <Route path={EnumRoutes.chooseArea} element={<ChooseAreaPage />} />
+        <Route
+          path={EnumRoutes.musicianProfile}
+          element={<MusicianProfilePage />}
+        />
+        <Route path={EnumRoutes.fanProfile} element={<FanProfilePage />} />
+        <Route path={EnumRoutes.venueProfile} element={<VenueProfilePage />} />
       </Route>
     </Routes>
   );
