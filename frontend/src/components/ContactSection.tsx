@@ -18,52 +18,62 @@ function ContactSection() {
         className="font-manrope text-white gap-5 mobile:gap-10 flex flex-col items-center"
         data-aos="fade-left"
       >
-        <h1 className="font-clashDisplay text-[4rem] text-primaryColor_lightBlue m-0 mobile:mb-[1rem]">
-          Contact
-        </h1>
+        <h1 className="font-clashDisplay text-[4rem]">Contact</h1>
         <span className="px-[2rem] sm:px-[10rem] lg:px-[20rem] xl:px-[30rem] mb-[2rem]">
-          If you want to be one of our app testers or ask questions we are happy
-          to answer them! Please contact us through the form or at
-          contact@slove.live.
+          Please contact us through the form or mail us to contact@slove.live.
         </span>
         <form
           action="https://formsubmit.co/2031a6e59570361b610ba0001395ee70"
           className="flex flex-col gap-2"
           method="POST"
         >
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            name="user_name"
-            id="name"
-            placeholder="Name"
-            className="text-white px-4 py-2 rounded-lg bg-neutralColor_grayDarkest"
-            required
-          />
-          <label htmlFor="email">Email address</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email address"
-            className="text-white px-4 py-2 rounded-lg bg-neutralColor_grayDarkest"
-            required
-          />
+          <label htmlFor="name">Name*</label>
+          <div className="relative group mt-2">
+            <div className="absolute -inset-1 w-[21rem] sm:w-[26rem] bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              className="relative border w-[20rem] sm:w-[25rem] px-4 py-2 border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start"
+              required
+            />
+          </div>
 
-          <label htmlFor="text">Your question</label>
-          <textarea
-            name="message"
-            id="text"
-            rows={4}
-            cols={40}
-            placeholder="Ask your question here"
-            className="text-white p-4 rounded-lg bg-neutralColor_grayDarkest"
-            required
-          />
+          <label htmlFor="email" className="mt-4">
+            Email address*
+          </label>
+          <div className="relative group mt-2">
+            <div className="absolute -inset-1 w-[21rem] sm:w-[26rem] bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+              className="relative border w-[20rem] sm:w-[25rem] px-4 py-2 border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start"
+              required
+            />
+          </div>
+
+          <label htmlFor="text" className="mt-4">
+            Your question*
+          </label>
+          <div className="relative group mt-2">
+            <div className="absolute -inset-1 w-[21rem] sm:w-[26rem] bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <textarea
+              name="message"
+              id="text"
+              rows={7}
+              cols={40}
+              placeholder="Ask your question here"
+              className="relative border w-[20rem] sm:w-[25rem] px-4 py-4 border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start"
+              required
+            />
+          </div>
 
           <button
             type="submit"
-            className="mt-10 py-4 px-10 rounded-full bg-primaryColor_turquoise text-white hover:bg-primaryColor_darkTurquoise transition ease-in-out"
+            className="mt-10 py-4 px-10 rounded-full bg-secondaryColor_lilac text-black hover:bg-secondaryColor_purple transition ease-in-out"
           >
             Send
           </button>

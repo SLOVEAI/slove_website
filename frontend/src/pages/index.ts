@@ -9,6 +9,7 @@ export * from "./privacy-page";
 export * from "./faq-page";
 export * from "./terms-page";
 export * from "./career-page";
+export * from "./testApp-page";
 export * from "./login-page";
 export * from "./signup-page";
 export * from "./chooseArea-page";

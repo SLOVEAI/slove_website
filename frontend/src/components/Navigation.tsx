@@ -49,6 +49,11 @@ function Navigation() {
     navigate(path);
   };
 
+  const goToTestApp = () => {
+    let path = `/testApp`;
+    navigate(path);
+  };
+
   return (
     <>
       <nav className="py-12 px-10">
@@ -137,12 +142,19 @@ function Navigation() {
                 <div className="flex flex-row gap-5">
                   <li>
                     <Button
+                      label="Become a tester"
+                      onClick={goToTestApp}
+                      className="py-1 px-4 rounded-xl bg-secondaryColor_lilac hover:bg-secondaryColor_lightLilac transition ease-in-out"
+                    />
+                  </li>
+                  <li className="hidden">
+                    <Button
                       label="Login"
                       onClick={goToLogin}
                       className="py-1 px-4 rounded-xl bg-transparent border border-secondaryColor_lilac text-white hover:border-white transition ease-in-out"
                     />
                   </li>
-                  <li>
+                  <li className="hidden">
                     <Button
                       label="Sign up"
                       onClick={goToSignup}

@@ -20,6 +20,7 @@ import {
   MusicianProfilePage,
   FanProfilePage,
   VenueProfilePage,
+  TestAppPage,
 } from "../pages";
 
 export enum EnumRoutes {
@@ -40,6 +41,7 @@ export enum EnumRoutes {
   musicianProfile = "/musicianProfile",
   fanProfile = "/fanProfile",
   venueProfile = "/venueProfile",
+  testApp = "/testApp",
 }
 
 export const AppRoutes = () => {
@@ -57,6 +59,7 @@ export const AppRoutes = () => {
         <Route path={EnumRoutes.privacy} element={<PrivacyPage />} />
         <Route path={EnumRoutes.terms} element={<TermsPage />} />
         <Route path={EnumRoutes.career} element={<CareerPage />} />
+        <Route path={EnumRoutes.testApp} element={<TestAppPage />} />
       </Route>
       <Route element={<LoginSignupLayout />}>
         <Route path={EnumRoutes.login} element={<LoginPage />} />

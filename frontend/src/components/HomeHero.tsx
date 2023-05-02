@@ -9,8 +9,8 @@ import "aos/dist/aos.css";
 
 function HomeHero() {
   let navigate = useNavigate();
-  const goToContact = () => {
-    let path = `/contact`;
+  const goToTestApp = () => {
+    let path = `/testApp`;
     navigate(path);
   };
 
@@ -59,9 +59,9 @@ function HomeHero() {
             />
           </div>
           <Button
-            label="Contact Us"
-            onClick={goToContact}
-            className="self-center mt-[-2rem] xl:self-start py-3 px-[5rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white border border-black hover:bg-primaryColor_darkTurquoise transition ease-in-out"
+            label="Sign Up"
+            onClick={goToTestApp}
+            className="self-center mt-[-2rem] xl:self-start py-3 px-[6rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white border border-black hover:bg-primaryColor_darkTurquoise transition ease-in-out"
           />
         </section>
         <section className="hidden xl:block">
