@@ -3,24 +3,24 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 enum FormType {
-  FORM1 = "form1",
-  FORM2 = "form2",
-  FORM3 = "form3",
+  FORM1 = "musicianForm",
+  FORM2 = "venueForm",
+  FORM3 = "fanForm",
 }
 
 const MusicianForm = () => {
   return (
     <div className="flex flex-col">
-      <label htmlFor="name" className="mt-4">
+      <label htmlFor="musician_name" className="mt-4">
         Band/Solo name*
       </label>
       <div className="relative group mt-2">
         <div className="absolute -inset-1 w-[21rem] sm:w-[26rem] bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
         <input
           type="text"
-          name="name"
-          id="name"
-          placeholder="Your name"
+          name="musician_name"
+          id="musician_name"
+          placeholder="Your Band/Solo name"
           className="relative border w-[20rem] sm:w-[25rem] px-4 py-2 border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start"
           required
         />
@@ -32,16 +32,16 @@ const MusicianForm = () => {
 const VenueForm = () => {
   return (
     <div className="flex flex-col">
-      <label htmlFor="name" className="mt-4">
+      <label htmlFor="venue_name" className="mt-4">
         Venue name*
       </label>
       <div className="relative group mt-2">
         <div className="absolute -inset-1 w-[21rem] sm:w-[26rem] bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
         <input
           type="text"
-          name="name"
-          id="name"
-          placeholder="Your name"
+          name="venue_name"
+          id="venue_name"
+          placeholder="Your venue name"
           className="relative border w-[20rem] sm:w-[25rem] px-4 py-2 border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start"
           required
         />
@@ -53,15 +53,15 @@ const VenueForm = () => {
 const FanForm = () => {
   return (
     <div className="flex flex-col">
-      <label htmlFor="name" className="mt-4">
+      <label htmlFor="fan_name" className="mt-4">
         Name*
       </label>
       <div className="relative group mt-2">
         <div className="absolute -inset-1 w-[21rem] sm:w-[26rem] bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
         <input
           type="text"
-          name="name"
-          id="name"
+          name="fan_name"
+          id="fan_name"
           placeholder="Your name"
           className="relative border w-[20rem] sm:w-[25rem] px-4 py-2 border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start"
           required

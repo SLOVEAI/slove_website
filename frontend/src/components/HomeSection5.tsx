@@ -36,7 +36,6 @@ function HomeSection5() {
       mirror: true,
       easing: "ease-out-cubic",
     });
-
     startSlider();
   }, []);
 
