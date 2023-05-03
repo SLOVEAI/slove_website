@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 enum FormType {
   FORM1 = "form1",
@@ -70,6 +72,15 @@ const FanForm = () => {
 };
 
 function TestAppSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      debounceDelay: 50,
+      mirror: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   const [type, setType] = useState<FormType>(FormType.FORM1);
 
   const handleFormTypeChange = (
@@ -80,7 +91,7 @@ function TestAppSection() {
   return (
     <>
       <div
-        className="font-manrope text-white gap-5 mobile:gap-10 flex flex-col items-center"
+        className="font-manrope text-white mt-10 gap-5 mobile:gap-10 flex flex-col items-center"
         data-aos="fade-left"
       >
         <h1 className="font-clashDisplay text-[4rem]">Become a Tester</h1>
@@ -137,7 +148,7 @@ function TestAppSection() {
               id="text"
               rows={7}
               cols={40}
-              placeholder="Ask your question here"
+              placeholder="Write important additional information"
               className="relative border w-[20rem] sm:w-[25rem] px-4 py-4 border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start"
             />
           </div>
