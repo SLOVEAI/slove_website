@@ -71,6 +71,14 @@ function ContactSection() {
             />
           </div>
 
+          <input
+            type="hidden"
+            name="_next"
+            value="https://www.slove.io/thanks"
+          ></input>
+
+          <input type="hidden" name="_captcha" value="false" />
+
           <button
             type="submit"
             className="mt-10 py-4 px-10 rounded-full bg-secondaryColor_lilac text-black hover:bg-secondaryColor_purple transition ease-in-out"

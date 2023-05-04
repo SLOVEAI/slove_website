@@ -21,6 +21,7 @@ import {
   FanProfilePage,
   VenueProfilePage,
   TestAppPage,
+  ThanksPage,
 } from "../pages";
 
 export enum EnumRoutes {
@@ -42,6 +43,7 @@ export enum EnumRoutes {
   fanProfile = "/fanProfile",
   venueProfile = "/venueProfile",
   testApp = "/testApp",
+  thanks = "/thanks",
 }
 
 export const AppRoutes = () => {
@@ -71,6 +73,7 @@ export const AppRoutes = () => {
         />
         <Route path={EnumRoutes.fanProfile} element={<FanProfilePage />} />
         <Route path={EnumRoutes.venueProfile} element={<VenueProfilePage />} />
+        <Route path={EnumRoutes.thanks} element={<ThanksPage />} />
       </Route>
     </Routes>
   );

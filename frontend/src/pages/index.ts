@@ -16,3 +16,4 @@ export * from "./chooseArea-page";
 export * from "./musicianProfile-page";
 export * from "./fanProfile-page";
 export * from "./venueProfile-page";
+export * from "./thanks-page";
