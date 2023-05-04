@@ -44,7 +44,7 @@ module.exports = {
 
         exeption: "1107px",
 
-        mobile: "415px",
+        mobile: "500px",
       },
     },
   },
