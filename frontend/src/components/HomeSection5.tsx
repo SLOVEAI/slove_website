@@ -23,12 +23,6 @@ const testimonials = [
 ];
 
 function HomeSection5() {
-  const startSlider = () => {
-    setInterval(() => {
-      handleOnNextClick();
-    }, 3000);
-  };
-
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -36,6 +30,11 @@ function HomeSection5() {
       mirror: true,
       easing: "ease-out-cubic",
     });
+    const startSlider = () => {
+      setInterval(() => {
+        handleOnNextClick();
+      }, 3000);
+    };
     startSlider();
   }, []);
 
