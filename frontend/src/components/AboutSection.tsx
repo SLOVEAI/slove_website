@@ -92,7 +92,7 @@ function AboutSection() {
               <img
                 src={siva}
                 alt="siva_picture"
-                className="rounded-[3rem] w-[21rem]"
+                className="rounded-[3rem] w-[22rem]"
               />
             </div>
           </div>
