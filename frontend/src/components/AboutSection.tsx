@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import sloveLocation from "../assets/location.png";
-import sloveMap from "../assets/map.png";
-import siva from "../assets/siva.png";
-import text1 from "../assets/text1_img.svg";
-import text2 from "../assets/text2_img.svg";
-import text3 from "../assets/text3_img.svg";
+import sloveLocation from "../../assets/location.png";
+import sloveMap from "../../assets/map.png";
+import siva from "../../assets/siva_2.png";
+import text1 from "../../assets/text1_img.svg";
+import text2 from "../../assets/text2_img.svg";
+import text3 from "../../assets/text3_img.svg";
 import Button from "./Button";
 
 function AboutSection() {
@@ -89,7 +89,11 @@ function AboutSection() {
                 a unique way to apply deep tech to solve many of these issues,
                 and I can't wait to see the impact it has on the music scene.
               </p>
-              <img src={siva} alt="slove_location" className="rounded-[3rem]" />
+              <img
+                src={siva}
+                alt="siva_picture"
+                className="rounded-[3rem] w-[21rem]"
+              />
             </div>
           </div>
         </div>
@@ -195,6 +199,7 @@ function AboutSection() {
                 </p>
                 <Button
                   label="Get our newsletter"
+                  onClick={() => alert("Coming soon!")}
                   className="py-3 px-7 w-[12rem] mobile:w-[17rem] xl:w-[20rem] text-[1rem] xl:text-[1vw] whitespace-nowrap rounded-full bg-white text-black items-center hover:bg-gray-100 ease-in-out"
                 />
               </div>

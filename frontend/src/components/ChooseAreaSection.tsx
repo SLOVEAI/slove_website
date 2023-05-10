@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import artistVector from "../assets/vector1.png";
-import fanVector from "../assets/vector2.png";
-import venueVector from "../assets/vector3.png";
+import artistVector from "../../assets/vector1.png";
+import fanVector from "../../assets/vector2.png";
+import venueVector from "../../assets/vector3.png";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 
 function ChooseAreaSection() {

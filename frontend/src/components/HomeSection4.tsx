@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import model from "../assets/diagram.png";
+import model from "../../assets/diagram.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

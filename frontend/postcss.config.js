@@ -1,7 +1,5 @@
+const tailwindcss = require("tailwindcss");
+
 module.exports = {
-  plugins: [
-    require("tailwindcss"),
-    require("autoprefixer"),
-    require("tailwindcss-scroll-snap"),
-  ],
+  plugins: [tailwindcss("./tailwind.config.js")],
 };

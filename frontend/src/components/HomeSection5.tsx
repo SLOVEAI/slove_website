@@ -67,7 +67,9 @@ function HomeSection5() {
                   : "border bg-transparent border-white w-3 h-3 rounded-full"
               }
             >
-              <button></button>
+              <button>
+                <div className="hidden">{testimonial.type}</div>
+              </button>
             </div>
           ))}
         </div>
