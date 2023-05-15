@@ -142,7 +142,7 @@ function Navigation() {
                 <div className="flex flex-row gap-5">
                   <li>
                     <Button
-                      label="Become a tester"
+                      label="Join US"
                       onClick={goToTestApp}
                       className="py-1 px-4 rounded-xl bg-secondaryColor_lilac hover:bg-secondaryColor_lightLilac transition ease-in-out"
                     />

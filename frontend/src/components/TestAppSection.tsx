@@ -94,7 +94,7 @@ function TestAppSection() {
         className="font-manrope text-white mt-10 gap-5 mobile:gap-10 flex flex-col items-center"
         data-aos="fade-left"
       >
-        <h1 className="font-clashDisplay text-[4rem]">Become a Tester</h1>
+        <h1 className="font-clashDisplay text-[4rem]">Join US</h1>
         <span className="px-[2rem] sm:px-[10rem] lg:px-[20rem] xl:px-[30rem] mb-[2rem]">
           We're thrilled to have you on board for the beta testing phase of our
           platform. Rest assured; we'll send you an email with further

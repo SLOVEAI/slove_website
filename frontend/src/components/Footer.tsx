@@ -117,7 +117,7 @@ function Footer() {
           <section>
             <ul className="flex flex-row gap-10 align-center sm:gap-0 sm:flex-col items-center">
               <li className="font-bold pb-6 whitespace-nowrap">Follow us</li>
-              <a href="https://www.instagram.com/slove_ai/">
+              <a href="https://www.instagram.com/slove.io/">
                 <li>
                   <AiFillInstagram className="text-3xl text-secondaryColor_lilac mb-2 hover:text-secondaryColor_purple transition ease-in-out" />
                 </li>
