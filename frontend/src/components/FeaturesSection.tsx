@@ -4,15 +4,33 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import FeaturesCard from "./FeaturesCard";
 
-import ekpimg from "../../assets/features_imgs/appphone_test.png";
-import get_booked from "../../assets/features_imgs/musician_get_booked.png";
-import actionable_insights from "../../assets/features_imgs/musician/musician_actionable_insights.png";
-import discover from "../../assets/features_imgs/musician/musician_discover.png";
-import effortless_booking from "../../assets/features_imgs/musician/musician_effortless_booking.png";
-import expand_fanbase from "../../assets/features_imgs/musician/musician_expand_fanbase.png";
-import get_discovered from "../../assets/features_imgs/musician/musician_get_discovered.png";
-import safe_and_secure_communication from "../../assets/features_imgs/musician/musician_safe_and_secure_communication.png";
-import smart_calendar from "../../assets/features_imgs/musician/musician_smart_calendar.png";
+// MUSICIAN PROTOTYPE IMGS
+import m_ekpimg from "../../assets/features_imgs/musician/appphone_test.png";
+import m_get_booked from "../../assets/features_imgs/musician/musician_get_booked.png";
+import m_actionable_insights from "../../assets/features_imgs/musician/musician_actionable_insights.png";
+import m_discover from "../../assets/features_imgs/musician/musician_discover.png";
+import m_effortless_booking from "../../assets/features_imgs/musician/musician_effortless_booking.png";
+import m_expand_fanbase from "../../assets/features_imgs/musician/musician_expand_fanbase.png";
+import m_get_discovered from "../../assets/features_imgs/musician/musician_get_discovered.png";
+import m_safe_and_secure_communication from "../../assets/features_imgs/musician/musician_safe_and_secure_communication.png";
+import m_smart_calendar from "../../assets/features_imgs/musician/musician_smart_calendar.png";
+
+// VENUE PROTOTYPE IMGS
+import v_automated_event_generation from "../../assets/features_imgs/venue/venues_automated_event_generation.png";
+import v_competitive_insights from "../../assets/features_imgs/venue/venues_competitive_insights.png";
+import v_discover from "../../assets/features_imgs/venue/venues_discover.png";
+import v_effortless_booking from "../../assets/features_imgs/venue/venues_effortless_booking.png";
+import v_personalized_recommendation from "../../assets/features_imgs/venue/venues_personalized_recommendation.png";
+import v_safe_and_secure_communication from "../../assets/features_imgs/venue/venues_safe_and_secure_communication.png";
+import v_smart_calendar from "../../assets/features_imgs/venue/venues_smart_calendar.png";
+import v_venue_review from "../../assets/features_imgs/venue/venues_venue_review.png";
+
+// FAN PROTOTYPE IMGS
+import f_affordable_ticket_pricing from "../../assets/features_imgs/fan/fanbase_affordable_ticket_pricing.png";
+import f_easy_ticket_purchasing from "../../assets/features_imgs/fan/fanbase_easy_ticket_purchasing.png";
+import f_gig_notification from "../../assets/features_imgs/fan/fanbase_gig_notification.png";
+import f_more_gigs_more_fun from "../../assets/features_imgs/fan/fanbase_more_gigs_more_fun.png";
+import f_new_music from "../../assets/features_imgs/fan/fanbase_new_music.png";
 
 function FeaturesSection() {
   useEffect(() => {
@@ -30,55 +48,55 @@ function FeaturesSection() {
       advantages: [
         <FeaturesCard
           label="Intelligent EPK"
-          picture={ekpimg}
+          picture={m_ekpimg}
           className="-mt-[3rem]"
           text="We're proud to offer a reliable and user-friendly interface for your electronic press kit (EPK) needs. Our platform is designed to adapt and evolve based on your actions, feedback from listeners, and your past and upcoming performances, ensuring that your EPK is always up-to-date and accurate."
         />,
         <FeaturesCard
-          label="Get booked"
-          picture={get_booked}
+          label="Get Match"
+          picture={m_get_booked}
           className="-mt-[4rem] sm:-mt-[5rem]"
           text="We understand that getting your gig booked by venues can be quite challenging and time-consuming. But don't worry, we've got your back! Our app is here to recommend venues to you based on your electronic press kit (EPK), which can significantly increase your chances of getting booked. Once you've created your profile, our app will match you with prospective venues that are a good fit for your style and requirements. This means that you could land a booking almost immediately! Let us help you make your booking process stress-free and enjoyable."
         />,
         <FeaturesCard
           label="Smart Calender"
-          picture={smart_calendar}
+          picture={m_smart_calendar}
           className="-mt-[0.5rem]"
           text="With regular updates, our system takes into account your availability and suggests suitable venues for you to consider. Plus, venues can see your availability and propose booking slots, making the process even more streamlined and efficient."
         />,
         <FeaturesCard
-          label="Effortless Booking"
-          picture={effortless_booking}
+          label="Seamless Booking"
+          picture={m_effortless_booking}
           className="-mt-[0.9rem]"
           text="Once you've found the perfect match, you can start a conversation with them via our user-friendly chat interface and organize everything from the time and date of the event to the booking price, additional requests, contracts, chats, and secure payments - all in one place!"
         />,
         <FeaturesCard
           label="Discover"
-          picture={discover}
+          picture={m_discover}
           className="-mt-[3rem]"
           text="No worries if our venue recommendations don't quite match what you're looking for. Our platform offers extensive search options, allowing you to easily find and discover the perfect venues that fit your unique style and requirements. We want you to have the freedom and flexibility to take control of your music career and choose the venues that best suit your needs.!"
         />,
         <FeaturesCard
           label="Safe and secure communication"
-          picture={safe_and_secure_communication}
+          picture={m_safe_and_secure_communication}
           className="-mt-[2.6rem]"
           text="You can effortlessly connect and communicate with anyone in the community, with full control over who can contact you directly. Plus, our user-friendly chat functionality ensures that you can network and collaborate with others in the music industry while feeling safe and secure."
         />,
         <FeaturesCard
-          label="Actionable insights"
-          picture={actionable_insights}
+          label="Trustworthy insights"
+          picture={m_actionable_insights}
           className="-mt-[2rem]"
           text="Get valuable insights on your music career with our user-friendly dashboard. Keep track of your progress, identify areas for improvement, and make informed decisions to achieve your music career aspirations. Easily see what audiences and venues are saying about you and use this information to take action and reach your goals. Trust us to provide you with actionable insights to advance your music career."
         />,
         <FeaturesCard
-          label="Expand fanbase"
-          picture={expand_fanbase}
+          label="Expanding fanbase"
+          picture={m_expand_fanbase}
           className="mt-[1rem]"
           text="Expand your fan base and grow your music career with our platform. Keep your EPK up-to-date to showcase your best work and easily connect with your audience. Receive valuable feedback and reviews to help you improve and build a loyal fan base. Join us today and get discovered by music enthusiasts!"
         />,
         <FeaturesCard
           label="Get discovered"
-          picture={get_discovered}
+          picture={m_get_discovered}
           className="-mt-[2.7rem]"
           text="Looking to connect with other music professionals? Our platform is the perfect place for networking opportunities, mentorship, or finding new band members. Designed to make it easy for you to connect and collaborate with like-minded individuals, trust us to provide a safe and user-friendly environment to help you achieve your goals and advance your music career. Get discovered by other industry professionals today!"
         />,
@@ -87,17 +105,89 @@ function FeaturesSection() {
     {
       type: "venue",
       advantages: [
-        <FeaturesCard label="Discover local talent" />,
-        <FeaturesCard label="Promote your events" />,
-        <FeaturesCard label="Insights on the local music scene" />,
+        <FeaturesCard
+          label="Personalized Recommendation"
+          picture={v_personalized_recommendation}
+          className="-mt-[2rem] sm:-mt-[3rem]"
+          text="Our extensive search options allow you to discover talented grassroot artists who match your specific requirements. In addition to that, our system considers your availability and suggests suitable musicians for you to consider, making the process even more streamlined and efficient."
+        />,
+        <FeaturesCard
+          label="Seamless Booking"
+          picture={v_effortless_booking}
+          className="mt-[2rem]"
+          text="Once you have found the perfect match, you can start a conversation with them via our user-friendly chat interface. There you can organize everything from the time and date of the event to the booking price, additional requests, contracts, chats, and secure payments - all from one platform!"
+        />,
+        <FeaturesCard
+          label="Discover"
+          picture={v_discover}
+          className="-mt-[2rem] sm:-mt-[3rem]"
+          text="We offer extensive search options that allow you to discover talented artists who match your specific requirements. Whether you're looking for a particular genre or style, or simply want to browse through a wide range of options, our platform makes it easy to find the musicians that are right for you. Once you've found the perfect match, you can start a conversation with them through our user-friendly chat interface."
+        />,
+        <FeaturesCard
+          label="Smart Calender"
+          picture={v_smart_calendar}
+          className="-mt-[2rem] sm:-mt-[3rem]"
+          text="With this feature, you can set your availability preferences in your profile and receive recommendations based on your requirements. Additionally, musicians can also see your availability and propose booking slots directly, making the booking process more efficient. Our goal is to simplify the process and conveniently help you connect with the right musicians for your events."
+        />,
+        <FeaturesCard
+          label="Automatically Generated"
+          picture={v_automated_event_generation}
+          className="-mt-[1rem] sm:-mt-[3rem]"
+          text="When you confirm a booking with one of our talented musicians, our platform automatically generates an event for your upcoming show. This event is then promoted on the app and recommended to audiences who share similar preferences to your target audience - maximizing your chances of a successful turnout."
+        />,
+        <FeaturesCard
+          label="Venue Reviews"
+          picture={v_venue_review}
+          className="-mt-[1rem]"
+          text="Musicians and audiences can leave reviews about your venue, which will help improve your reputation and inspire future visitors to attend events you are hosting. A reputable venue ensures that you are a reliable option for talented musicians, who may be interested in reaching out to you regarding a collaboration for their next performance."
+        />,
+        <FeaturesCard
+          label="Competitive Insights"
+          picture={v_competitive_insights}
+          className="mt-[7.7rem]"
+          text="We gather valuable intelligence that provides quick insight about the local live music scene."
+        />,
+        <FeaturesCard
+          label="Safe and Secure Communication"
+          picture={v_safe_and_secure_communication}
+          className="mt-[1rem]"
+          text="You can effortlessly connect and communicate with anyone in the community, and you have full control over who can directly contact you. Plus, our user-friendly chat functionality assures that you can safely and securely network and collaborate with others in the music industry."
+        />,
       ],
     },
     {
       type: "audience",
       advantages: [
-        <FeaturesCard label="Easy ticket access" />,
-        <FeaturesCard label="Discover local artists" />,
-        <FeaturesCard label="item 3" />,
+        <FeaturesCard
+          label="More Gigs, More Fun"
+          picture={f_more_gigs_more_fun}
+          className="mt-[3rem]"
+          text="Plan your gig calendar ahead of time with our diverse selection of small and medium-scale gigs featuring talented grassroots musicians. Choose the music that speaks to you and enjoy a night of unforgettable live entertainment."
+        />,
+        <FeaturesCard
+          label="Easy Ticket Purchasing"
+          picture={f_easy_ticket_purchasing}
+          className="mt-[0.3rem]"
+          text="Once you've found an event you're interested in, you can easily buy your ticket with just a few clicks. You'll have your ticket on your mobile, ready for the event!"
+        />,
+        <FeaturesCard
+          label="Affordable Ticket Pricing"
+          picture={f_affordable_ticket_pricing}
+          className="mt-[3rem]"
+          text="We make sure our ticket pricing is affordable for all. Our focus is on true music devotees, making it attainable for everyone to attend the events they love."
+        />,
+        <FeaturesCard
+          label="Gig Notifications"
+          picture={f_gig_notification}
+          className="mt-[3rem]"
+          text="Never miss a great event again! Just activate your 'gig notification' to stay alert for upcoming shows that match your preferences."
+        />,
+        <FeaturesCard
+          label="New Music"
+          picture={f_new_music}
+          className="-mt-[1rem]"
+          text="Get ready to discover new music that perfectly fits your taste! Our platform will suggest emerging artists based on your preferences. Simply browse through their profiles, listen to their music, and follow them to stay informed about their latest work."
+        />,
       ],
     },
   ];
