@@ -1,5 +1,5 @@
 import React from "react";
-import ThanksSection from "../../components/ThanksSection";
+import ThanksSection from "../../components/Shared_components/ThanksSection";
 
 const ThanksPage = () => {
   return (

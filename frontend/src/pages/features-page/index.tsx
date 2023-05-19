@@ -1,5 +1,5 @@
 import React from "react";
-import FeaturesSection from "../../components/FeaturesSection";
+import FeaturesSection from "../../components/Features_components/FeaturesSection";
 
 const FeaturesPage = () => {
   return (

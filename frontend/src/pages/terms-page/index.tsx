@@ -1,5 +1,5 @@
 import React from "react";
-import TermsSection from "../../components/TermsSection";
+import TermsSection from "../../components/Terms_components/TermsSection";
 
 const TermsPage = () => {
   return (

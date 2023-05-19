@@ -1,5 +1,4 @@
 import React from "react";
-import "../index.css";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";

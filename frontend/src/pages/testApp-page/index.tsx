@@ -1,5 +1,5 @@
 import React from "react";
-import TestAppSection from "../../components/TestAppSection";
+import TestAppSection from "../../components/Testapp_components/TestAppSection";
 
 const TestAppPage = () => {
   return (

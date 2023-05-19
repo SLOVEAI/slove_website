@@ -1,7 +1,6 @@
 import React from "react";
-import "../index.css";
 import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import Button from "./Button";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";

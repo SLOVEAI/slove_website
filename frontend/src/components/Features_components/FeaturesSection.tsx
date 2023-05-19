@@ -5,32 +5,32 @@ import "aos/dist/aos.css";
 import FeaturesCard from "./FeaturesCard";
 
 // MUSICIAN PROTOTYPE IMGS
-import m_ekpimg from "../../assets/features_imgs/musician/appphone_test.png";
-import m_get_booked from "../../assets/features_imgs/musician/musician_get_booked.png";
-import m_actionable_insights from "../../assets/features_imgs/musician/musician_actionable_insights.png";
-import m_discover from "../../assets/features_imgs/musician/musician_discover.png";
-import m_effortless_booking from "../../assets/features_imgs/musician/musician_effortless_booking.png";
-import m_expand_fanbase from "../../assets/features_imgs/musician/musician_expand_fanbase.png";
-import m_get_discovered from "../../assets/features_imgs/musician/musician_get_discovered.png";
-import m_safe_and_secure_communication from "../../assets/features_imgs/musician/musician_safe_and_secure_communication.png";
-import m_smart_calendar from "../../assets/features_imgs/musician/musician_smart_calendar.png";
+import m_ekpimg from "../../../assets/features_imgs/musician/appphone_test.png";
+import m_get_booked from "../../../assets/features_imgs/musician/musician_get_booked.png";
+import m_actionable_insights from "../../../assets/features_imgs/musician/musician_actionable_insights.png";
+import m_discover from "../../../assets/features_imgs/musician/musician_discover.png";
+import m_effortless_booking from "../../../assets/features_imgs/musician/musician_effortless_booking.png";
+import m_expand_fanbase from "../../../assets/features_imgs/musician/musician_expand_fanbase.png";
+import m_get_discovered from "../../../assets/features_imgs/musician/musician_get_discovered.png";
+import m_safe_and_secure_communication from "../../../assets/features_imgs/musician/musician_safe_and_secure_communication.png";
+import m_smart_calendar from "../../../assets/features_imgs/musician/musician_smart_calendar.png";
 
 // VENUE PROTOTYPE IMGS
-import v_automated_event_generation from "../../assets/features_imgs/venue/venues_automated_event_generation.png";
-import v_competitive_insights from "../../assets/features_imgs/venue/venues_competitive_insights.png";
-import v_discover from "../../assets/features_imgs/venue/venues_discover.png";
-import v_effortless_booking from "../../assets/features_imgs/venue/venues_effortless_booking.png";
-import v_personalized_recommendation from "../../assets/features_imgs/venue/venues_personalized_recommendation.png";
-import v_safe_and_secure_communication from "../../assets/features_imgs/venue/venues_safe_and_secure_communication.png";
-import v_smart_calendar from "../../assets/features_imgs/venue/venues_smart_calendar.png";
-import v_venue_review from "../../assets/features_imgs/venue/venues_venue_review.png";
+import v_automated_event_generation from "../../../assets/features_imgs/venue/venues_automated_event_generation.png";
+import v_competitive_insights from "../../../assets/features_imgs/venue/venues_competitive_insights.png";
+import v_discover from "../../../assets/features_imgs/venue/venues_discover.png";
+import v_effortless_booking from "../../../assets/features_imgs/venue/venues_effortless_booking.png";
+import v_personalized_recommendation from "../../../assets/features_imgs/venue/venues_personalized_recommendation.png";
+import v_safe_and_secure_communication from "../../../assets/features_imgs/venue/venues_safe_and_secure_communication.png";
+import v_smart_calendar from "../../../assets/features_imgs/venue/venues_smart_calendar.png";
+import v_venue_review from "../../../assets/features_imgs/venue/venues_venue_review.png";
 
 // FAN PROTOTYPE IMGS
-import f_affordable_ticket_pricing from "../../assets/features_imgs/fan/fanbase_affordable_ticket_pricing.png";
-import f_easy_ticket_purchasing from "../../assets/features_imgs/fan/fanbase_easy_ticket_purchasing.png";
-import f_gig_notification from "../../assets/features_imgs/fan/fanbase_gig_notification.png";
-import f_more_gigs_more_fun from "../../assets/features_imgs/fan/fanbase_more_gigs_more_fun.png";
-import f_new_music from "../../assets/features_imgs/fan/fanbase_new_music.png";
+import f_affordable_ticket_pricing from "../../../assets/features_imgs/fan/fanbase_affordable_ticket_pricing.png";
+import f_easy_ticket_purchasing from "../../../assets/features_imgs/fan/fanbase_easy_ticket_purchasing.png";
+import f_gig_notification from "../../../assets/features_imgs/fan/fanbase_gig_notification.png";
+import f_more_gigs_more_fun from "../../../assets/features_imgs/fan/fanbase_more_gigs_more_fun.png";
+import f_new_music from "../../../assets/features_imgs/fan/fanbase_new_music.png";
 
 function FeaturesSection() {
   useEffect(() => {

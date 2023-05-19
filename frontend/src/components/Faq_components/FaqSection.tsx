@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import CollapseDiv from "./CollapseDiv";
+import CollapseDiv from "../Shared_components/CollapseDiv";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { HiOutlinePlus } from "react-icons/hi";

@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Card from "./Card";
+import Card from "../Shared_components/Card";
 
-import money from "../../assets/money.png";
-import venue from "../../assets/venue.png";
-import connections from "../../assets/connections.png";
+import money from "../../../assets/money.png";
+import venue from "../../../assets/venue.png";
+import connections from "../../../assets/connections.png";
 
-import artist from "../../assets/artist.png";
-import insights from "../../assets/insights.png";
-import promotion from "../../assets/promotion.png";
+import artist from "../../../assets/artist.png";
+import insights from "../../../assets/insights.png";
+import promotion from "../../../assets/promotion.png";
 
-import recommendation from "../../assets/recommendation.png";
-import singer from "../../assets/singer.png";
-import ticket from "../../assets/ticket.png";
+import recommendation from "../../../assets/recommendation.png";
+import singer from "../../../assets/singer.png";
+import ticket from "../../../assets/ticket.png";
 
 function HomeSection2() {
   useEffect(() => {

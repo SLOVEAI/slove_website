@@ -1,5 +1,5 @@
 import React from "react";
-import PrivacySection from "../../components/PrivacySection";
+import PrivacySection from "../../components/Privacy_components/PrivacySection";
 
 const PrivacyPage = () => {
   return (
