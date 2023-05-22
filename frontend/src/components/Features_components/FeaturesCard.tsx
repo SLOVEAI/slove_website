@@ -1,4 +1,7 @@
 import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 type Props = {
   label: string;
@@ -8,6 +11,15 @@ type Props = {
 };
 
 function FeaturesCard(props: Props) {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      debounceDelay: 50,
+      mirror: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <div className="mx-auto">
       <div className="relative group">
@@ -18,7 +30,11 @@ function FeaturesCard(props: Props) {
               {props.label}
             </h1>
             <p className="text-justify leading-[1.5rem]">{props.text}</p>
-            <img src={props.picture} className={props.className} />
+            <img
+              src={props.picture}
+              className={props.className}
+              data-aos="fade-up"
+            />
           </div>
         </div>
       </div>

@@ -26,10 +26,13 @@ function HomeHero() {
   return (
     <>
       <div
-        className="overflow-hidden flex flex-row items-center mt-5 mb-[6rem] mx-5 mobile:mx-[2rem] sm:mx-[5rem] md:mx-[10rem] rounded-full px-[2rem] mobile:px-[5rem] lg:px-0 py-5 rounded-bl-[6rem] 2xl:rounded-bl-[12rem] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl bg-gradient-to-r from-secondaryColor_darkPurple to-primaryColor_turquoise"
+        className="overflow-hidden flex flex-row items-center mt-5 mb-[4rem] xl:mb-[6rem] mx-5 mobile:mx-[2rem] sm:mx-[5rem] xl:mx-[10rem] rounded-full px-[2rem] mobile:px-[3rem] sm:px-[5rem] lg:px-0 py-5 rounded-bl-[6rem] 2xl:rounded-bl-[12rem] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl bg-gradient-to-r from-secondaryColor_darkPurple to-primaryColor_turquoise"
         data-aos="fade-left"
       >
-        <section className="flex flex-col gap-5 ml-1 md:ml-5 lg:ml-[7rem] items-center lg:items-start mr-[1rem] pt-1">
+        <section
+          className="flex flex-col gap-5 ml-1 md:ml-5 lg:ml-[7rem] items-center mb-[2rem] lg:mb-0 lg:items-start mr-[1rem] pt-1"
+          data-aos="fade-right"
+        >
           <h1 className="font-clashDisplay text-[3.2rem] xl:text-[3.5vw] text-white">
             Live music from the roots.
           </h1>
@@ -37,14 +40,15 @@ function HomeHero() {
             Connect venues with musicians and bring the fans to events. That has
             been our mission and we invite you to join us on this ride!
           </p>
-          <div className="block xl:hidden w-full">
+          <div className="block lg:hidden">
             <img
               src={app_img}
               alt="hero_img"
-              className="object-fill block self-start xl:hidden"
+              data-aos="fade-up"
+              className="self-start w-[40rem] sm:w-[30rem]"
             />
           </div>
-          <div className="hidden flex flex-col self-center xl:self-start lg:flex-row shrink flex-nowrap justify-center my-10 lg:justify-start gap-10">
+          <div className="hidden flex flex-col self-center lg:self-start lg:flex-row shrink flex-nowrap justify-center my-10 lg:justify-start gap-10">
             <Button
               label="Download on Appstore"
               onClick={() => alert("Not Available Now")}
@@ -61,11 +65,11 @@ function HomeHero() {
           <Button
             label="Become a tester"
             onClick={goToTestApp}
-            className="whitespace-nowrap self-center mt-2 xl:self-start py-3 px-[6rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white border border-black hover:bg-primaryColor_darkTurquoise transition ease-in-out"
+            className="whitespace-nowrap self-center mt-2 lg:self-start py-3 px-[6rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white border border-black hover:bg-primaryColor_darkTurquoise transition ease-in-out"
           />
         </section>
-        <section className="hidden xl:block">
-          <img src={app_img} alt="hero_img" className="w-auto mr-[3rem]" />
+        <section className="hidden lg:block mr-[2rem]" data-aos="fade-up">
+          <img src={app_img} alt="hero_img" className="w-[50rem]" />
         </section>
       </div>
     </>

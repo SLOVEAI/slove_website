@@ -24,7 +24,7 @@ function BlogSection() {
         <h1 className="text-primaryColor_lightBlue text-[4rem]">Coming Soon</h1>
         <h1 className="text-[2rem] text-white">Blog page</h1>
 
-        <div className="mt-10 flex flex-col text-left mx-[20rem]">
+        <div className="mt-10 hidden flex-col text-left mx-[20rem]">
           <BlogCard
             blog_title="SLOVE EPK"
             date="1 Feb, 2023"

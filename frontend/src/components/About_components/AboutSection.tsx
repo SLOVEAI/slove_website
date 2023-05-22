@@ -55,23 +55,25 @@ function AboutSection() {
                 src={sloveLocation}
                 alt="slove_location"
                 className="hidden sm:block"
+                data-aos="fade-up"
               />
               <img
                 src={sloveMap}
                 alt="slove_location"
                 className="sm:hidden block"
+                data-aos="fade-up"
               />
             </div>
           </div>
         </div>
         {/* SECTION 2 */}
-        <div className="relative group mt-2 w-3/4">
+        <div className="relative group mt-2 w-3/4" data-aos="fade-right">
           <div className="absolute -inset-1 bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25"></div>
           <div className="relative border gap-10 px-[3rem] md:px-[6rem] py-[4rem] border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex flex-col items-top justify-start">
             <h2 className="font-clashDisplay text-[2rem] sm:text-[3rem] text-white">
               About Siva
             </h2>
-            <div className="flex flex-col-reverse lg:flex-row pr-0 xl:pr-[4rem] gap-10 lg:gap-[5rem] items-center text-justify">
+            <div className="flex flex-col-reverse lg:flex-row gap-10 lg:gap-[5rem] items-center text-justify">
               <p className="leading-7">
                 Hey there! It's great to virtually meet you. I'm Siva Kumar
                 Mokkapati, a passionate AI expert, former Senior Leader at JP
@@ -89,16 +91,20 @@ function AboutSection() {
                 a unique way to apply deep tech to solve many of these issues,
                 and I can't wait to see the impact it has on the music scene.
               </p>
+              <div
+                className="hidden lg:block rounded-[2rem] bg-cover bg-center bg-no-repeat w-[85rem] xl:w-[75rem] h-[28rem] xl:h-[22rem]"
+                style={{ backgroundImage: `url(${siva})` }}
+              ></div>
               <img
                 src={siva}
                 alt="siva_picture"
-                className="rounded-[3rem] w-[22rem]"
+                className="block lg:hidden rounded-[3rem] w-[30rem]"
               />
             </div>
           </div>
         </div>
         {/* SECTION 3 */}
-        <div className="relative group mt-2 w-3/4">
+        <div className="relative group mt-2 w-3/4" data-aos="fade-left">
           <div className="absolute -inset-1 bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25"></div>
           <div className="relative border gap-10 px-[3rem] md:px-[6rem] py-[4rem] border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex flex-col items-top justify-start">
             <h2 className="font-clashDisplay text-[2rem] sm:text-[3rem] text-white">
@@ -110,7 +116,10 @@ function AboutSection() {
               for everyone to enjoy live music!
             </p>
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5rem] items-start text-center">
-              <div className="flex-1 flex flex-col items-center gap-7">
+              <div
+                className="flex-1 flex flex-col items-center gap-7"
+                data-aos="fade-up"
+              >
                 <img src={text1} alt="musician" />
                 <p className="leading-7 text-justify">
                   As a musician, we understand that you might not have enough
@@ -119,7 +128,10 @@ function AboutSection() {
                   with the world!
                 </p>
               </div>
-              <div className="flex-1 flex flex-col items-center gap-7">
+              <div
+                className="flex-1 flex flex-col items-center gap-7"
+                data-aos="fade-down"
+              >
                 <img src={text2} alt="venue" />
                 <p className="leading-7 text-justify">
                   As for venues, we know that it can be tough to find the right
@@ -127,7 +139,10 @@ function AboutSection() {
                   for your place and playing at the right time.
                 </p>
               </div>
-              <div className="flex-1 flex flex-col items-center gap-7">
+              <div
+                className="flex-1 flex flex-col items-center gap-7"
+                data-aos="fade-up"
+              >
                 <img src={text3} alt="fan" />
                 <p className="leading-7 text-justify">
                   And for the audience, we get it - discovering a spot that
@@ -141,7 +156,7 @@ function AboutSection() {
           </div>
         </div>
         {/* SECTION 4 */}
-        <div className="relative group mt-2 w-3/4">
+        <div className="relative group mt-2 w-3/4" data-aos="fade-right">
           <div className="absolute -inset-1 bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25"></div>
           <div className="relative border gap-10 px-[3rem] md:px-[6rem] py-[4rem] border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex flex-col items-top justify-start">
             <h2 className="font-clashDisplay text-[2rem] sm:text-[3rem] text-white">
@@ -168,14 +183,17 @@ function AboutSection() {
           </div>
         </div>
         {/* SECTION 5 */}
-        <div className="relative group mt-2 w-3/4">
+        <div className="relative group mt-2 w-3/4" data-aos="fade-left">
           <div className="absolute -inset-1 bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25"></div>
           <div className="relative border gap-10 px-[3rem] md:px-[6rem] py-[4rem] border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex flex-col items-top justify-start">
             <h2 className="font-clashDisplay text-[2rem] sm:text-[3rem] text-white">
               How to Join
             </h2>
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5rem] items-start text-center">
-              <div className="flex-1 flex flex-col items-center gap-7">
+              <div
+                className="flex-1 flex flex-col items-center gap-7"
+                data-aos="fade-right"
+              >
                 <p className="leading-7 text-justify">
                   We're thrilled to have you onboard for the beta testing phase
                   of our platform! We are currently offering exclusive access to
@@ -190,7 +208,10 @@ function AboutSection() {
                   className="mr-0 xl:mr-[5rem] py-3 px-7 w-[12rem] mobile:w-[17rem] xl:w-[20rem] text-[1rem] xl:text-[1vw] whitespace-nowrap rounded-full bg-white text-black items-center hover:bg-gray-100 ease-in-out"
                 />
               </div>
-              <div className="flex-1 flex flex-col items-center gap-7 lg:gap-[5.2rem]">
+              <div
+                className="flex-1 flex flex-col items-center gap-7 lg:gap-[5.2rem]"
+                data-aos="fade-left"
+              >
                 <p className="leading-7 text-justify">
                   If you want to stay up to date with what is happening at
                   SLOVE, please feel free to sign up for our newsletter! We

@@ -75,7 +75,7 @@ function HomeSection5() {
         </div>
 
         <div
-          className="duration-700 ease-in-out text-[2rem] md:text-[3rem] text-white mb-8 px-10 md:px-[17rem] text-center"
+          className="duration-700 ease-in-out text-[2rem] md:text-[3rem] text-white mb-8 px-10 lg:px-[17rem] text-center"
           data-carousel-item
         >
           "{testimonials[currentIndex].text}"

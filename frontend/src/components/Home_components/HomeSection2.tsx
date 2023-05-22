@@ -73,15 +73,15 @@ function HomeSection2() {
             How can we help you?
           </h2>
 
-          <div className="flex flex-row flex-1 xl:hidden whitespace-nowrap bg-white px-4 mobile:px-8 py-1 rounded-full gap-5 mobile:gap-[3rem] justify-center items-center mt-10">
+          <div className="flex flex-row flex-1 xl:hidden whitespace-nowrap bg-white px-2 py-1 rounded-full gap-5 justify-center text-center items-center mt-10">
             {targetTypes.map((targetType, targetIndex) => (
               <div
                 key={targetIndex}
                 onClick={() => goToTarget(targetIndex)}
                 className={
                   targetIndex === currentIndex
-                    ? "flex-1 bg-secondaryColor_darkPurple relative z-10 text-white p-2 px-10 rounded-full text-sm mobile:text-md md:text-xl cursor-pointer"
-                    : "flex-1 text-black text-sm mobile:text-md md:text-xl cursor-pointer"
+                    ? "flex-1 bg-secondaryColor_darkPurple text-white p-1 sm:p-2 w-[5.5rem] mobile:w-[7rem] sm:w-[9rem] rounded-full transition duration-500 cursor-pointer"
+                    : "flex-1 bg-white text-black p-1 sm:p-2 w-[5.5rem] mobile:w-[7rem] sm:w-[9rem] rounded-full cursor-pointer"
                 }
               >
                 {targetType.type}
@@ -94,23 +94,23 @@ function HomeSection2() {
           </div>
         </div>
 
-        <div className="flex flex-col col-span-2 row-span-1 mt-10 items-center">
-          <div className="hidden xl:flex flex-row whitespace-nowrap bg-white px-8 py-1 rounded-full gap-[3rem] items-center mt-10">
+        <div className="flex flex-col col-span-2 row-span-1 mt-10 items-center text-center">
+          <div className="hidden xl:flex flex-row whitespace-nowrap bg-white px-2 py-1 rounded-full gap-5 items-center mt-10">
             {targetTypes.map((targetType, targetIndex) => (
               <div
                 key={targetIndex}
                 onClick={() => goToTarget(targetIndex)}
                 className={
                   targetIndex === currentIndex
-                    ? "bg-secondaryColor_darkPurple text-white p-2 px-10 rounded-full"
-                    : "text-black"
+                    ? "bg-secondaryColor_darkPurple text-white p-1 sm:p-2 w-[5.5rem] mobile:w-[7rem] sm:w-[9rem] rounded-full transition duration-500"
+                    : "bg-white text-black p-1 sm:p-2 w-[5.5rem] mobile:w-[7rem] sm:w-[9rem] rounded-full"
                 }
               >
                 <h1 className="text-xl cursor-pointer">{targetType.type}</h1>
               </div>
             ))}
           </div>
-          <ul className="flex flex-col lg:flex-row items-center text-center mt-10 gap-12 lg:gap-6 mb-5">
+          <ul className="flex flex-col lg:flex-row items-center mt-10 gap-12 lg:gap-6 mb-5">
             <li>{targetTypes[currentIndex].advantage1}</li>
             <li>{targetTypes[currentIndex].advantage2}</li>
             <li>{targetTypes[currentIndex].advantage3}</li>

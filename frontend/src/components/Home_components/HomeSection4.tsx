@@ -20,7 +20,12 @@ function HomeSection4() {
         data-aos="fade-right"
       >
         <div className="ml-10 md:m-0 col-span-1 self-center row-span-1">
-          <img src={model} alt="model.img" className="w-[85%] sm:w-auto ml-3" />
+          <img
+            src={model}
+            alt="model.img"
+            className="w-[85%] sm:w-auto ml-3"
+            data-aos="fade-up"
+          />
         </div>
 
         <div className="col-span-1 row-span-1 flex flex-col items-center font-manrope text-[1rem] text-white font-semibold ml-2 sm:ml-[4rem]">

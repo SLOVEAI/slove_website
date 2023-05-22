@@ -209,15 +209,15 @@ function FeaturesSection() {
         </h1>
 
         <div className="flex flex-col col-span-2 row-span-1 mx-[5rem] items-center">
-          <div className="flex flex-row whitespace-nowrap bg-white px-5 sm:px-8 py-1 rounded-full gap-[3rem] items-center my-10">
+          <div className="flex flex-row whitespace-nowrap bg-white px-2 py-1 rounded-full gap-5 items-center my-10">
             {targetTypes.map((targetType, targetIndex) => (
               <div
                 key={targetIndex}
                 onClick={() => goToTarget(targetIndex)}
                 className={
                   targetIndex === currentIndex
-                    ? "bg-secondaryColor_darkPurple text-white p-1 sm:p-2 px-5 sm:px-10 rounded-full"
-                    : "text-black"
+                    ? "bg-secondaryColor_darkPurple text-white p-1 sm:p-2 w-[5.5rem] mobile:w-[7rem] sm:w-[9rem] rounded-full transition duration-500"
+                    : "bg-white text-black p-1 sm:p-2 w-[5.5rem] mobile:w-[7rem] sm:w-[9rem] rounded-full"
                 }
               >
                 <h1 className="text-md sm:text-xl cursor-pointer">
