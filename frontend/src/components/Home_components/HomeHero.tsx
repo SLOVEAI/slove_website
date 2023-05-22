@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import app_img from "../../../assets/app_img.png";
+import app_img from "../../../assets/home_imgs/app_img.png";
 import Button from "../Shared_components/Button";
 import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";

@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import sloveLocation from "../../../assets/location.png";
-import sloveMap from "../../../assets/map.png";
-import siva from "../../../assets/siva_2.png";
-import text1 from "../../../assets/text1_img.svg";
-import text2 from "../../../assets/text2_img.svg";
-import text3 from "../../../assets/text3_img.svg";
+import sloveLocation from "../../../assets/about_imgs/location.png";
+import sloveMap from "../../../assets/about_imgs/map.png";
+import siva from "../../../assets/about_imgs/siva_2.png";
+import text1 from "../../../assets/about_imgs/text1_img.svg";
+import text2 from "../../../assets/about_imgs/text2_img.svg";
+import text3 from "../../../assets/about_imgs/text3_img.svg";
 import Button from "../Shared_components/Button";
 
 function AboutSection() {

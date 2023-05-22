@@ -3,17 +3,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Card from "../Shared_components/Card";
 
-import money from "../../../assets/money.png";
-import venue from "../../../assets/venue.png";
-import connections from "../../../assets/connections.png";
+// MUSICIAN
+import money from "../../../assets/home_imgs/musician/money.png";
+import venue from "../../../assets/home_imgs/musician/venue.png";
+import connections from "../../../assets/home_imgs/musician/connections.png";
 
-import artist from "../../../assets/artist.png";
-import insights from "../../../assets/insights.png";
-import promotion from "../../../assets/promotion.png";
+// VENUE
+import artist from "../../../assets/home_imgs/venue/artist.png";
+import insights from "../../../assets/home_imgs/venue/insights.png";
+import promotion from "../../../assets/home_imgs/venue/promotion.png";
 
-import recommendation from "../../../assets/recommendation.png";
-import singer from "../../../assets/singer.png";
-import ticket from "../../../assets/ticket.png";
+// FAN
+import recommendation from "../../../assets/home_imgs/fan/recommendation.png";
+import singer from "../../../assets/home_imgs/fan/singer.png";
+import ticket from "../../../assets/home_imgs/fan/ticket.png";
 
 function HomeSection2() {
   useEffect(() => {
