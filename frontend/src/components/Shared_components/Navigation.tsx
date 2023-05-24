@@ -89,22 +89,22 @@ function Navigation() {
                 >
                   <MdClose className="cursor-pointer text-white text-2xl hover:text-secondaryColor_purple transition ease-in-out" />
                 </div>
-                <li className="flex flex-col lg:flex-row gap-12 text-secondaryColor_lilac text-manrope">
+                <div className="flex flex-col lg:flex-row gap-12 text-secondaryColor_lilac text-manrope">
                   {navItems.map((item, i) => {
                     return (
                       <Link to={item.to} key={i}>
-                        <h3 className="text-xl font-clashDisplay hover:text-white transition ease-in-out">
+                        <li className="text-xl font-clashDisplay hover:text-white transition ease-in-out">
                           {item.title}
-                        </h3>
+                        </li>
                       </Link>
                     );
                   })}
-                </li>
+                </div>
 
                 <div className="flex flex-row gap-5">
                   <li>
                     <Button
-                      label="Join US"
+                      label="Join Us"
                       onClick={goToTestApp}
                       className="py-1 px-4 rounded-xl bg-secondaryColor_lilac hover:bg-secondaryColor_lightLilac transition ease-in-out"
                     />

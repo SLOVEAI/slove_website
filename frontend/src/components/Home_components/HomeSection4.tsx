@@ -38,9 +38,9 @@ function HomeSection4() {
               happening behind the scenes.
             </p>
             <p>
-              We connect the three major players in the live music industry
-              based on their preferences. This brings them together in one
-              place, providing each with relevant and valuable information,
+              We link the three major players in the live music industry based
+              on their preferences. This brings them together in one place,
+              providing each with relevant and valuable information,
               specifically targeted for them. This way we open up numerous new
               and exciting opportunities that will help musicians and venues
               take a fresh breathe of the local live music scene!

@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FeaturesCard from "./FeaturesCard";
+import FeaturesHowTo from "./FeaturesHowTo";
+
+import line from "../../../assets/features_imgs/curved_line.svg";
 
 // MUSICIAN PROTOTYPE IMGS
 import m_ekpimg from "../../../assets/features_imgs/musician/appphone_test.png";
@@ -53,7 +56,7 @@ function FeaturesSection() {
           text="We're proud to offer a reliable and user-friendly interface for your electronic press kit (EPK) needs. Our platform is designed to adapt and evolve based on your actions, feedback from listeners, and your past and upcoming performances, ensuring that your EPK is always up-to-date and accurate."
         />,
         <FeaturesCard
-          label="Get Match"
+          label="Perfect Match"
           picture={m_get_booked}
           className="-mt-[4rem] sm:-mt-[5rem]"
           text="We understand that getting your gig booked by venues can be quite challenging and time-consuming. But don't worry, we've got your back! Our app is here to recommend venues to you based on your electronic press kit (EPK), which can significantly increase your chances of getting booked. Once you've created your profile, our app will match you with prospective venues that are a good fit for your style and requirements. This means that you could land a booking almost immediately! Let us help you make your booking process stress-free and enjoyable."
@@ -101,6 +104,10 @@ function FeaturesSection() {
           text="Looking to connect with other music professionals? Our platform is the perfect place for networking opportunities, mentorship, or finding new band members. Designed to make it easy for you to connect and collaborate with like-minded individuals, trust us to provide a safe and user-friendly environment to help you achieve your goals and advance your music career. Get discovered by other industry professionals today!"
         />,
       ],
+      HowItWorks1: "Set up you profile.",
+      HowItWorks2: "Reach out to venues for your next gig.",
+      HowItWorks3: "Discuss everything about the gig.",
+      HowItWorks4: "Time to perform - Have fun!",
     },
     {
       type: "venue",
@@ -154,12 +161,16 @@ function FeaturesSection() {
           text="You can effortlessly connect and communicate with anyone in the community, and you have full control over who can directly contact you. Plus, our user-friendly chat functionality assures that you can safely and securely network and collaborate with others in the music industry."
         />,
       ],
+      HowItWorks1: "Set up you profile.",
+      HowItWorks2: "Reach out to musicians you like.",
+      HowItWorks3: "Discuss your gigs.",
+      HowItWorks4: "It's time for your event - Have fun!",
     },
     {
       type: "audience",
       advantages: [
         <FeaturesCard
-          label="More Gigs, More Fun"
+          label="More Gigs - More Fun"
           picture={f_more_gigs_more_fun}
           className="mt-[3rem]"
           text="Plan your gig calendar ahead of time with our diverse selection of small and medium-scale gigs featuring talented grassroots musicians. Choose the music that speaks to you and enjoy a night of unforgettable live entertainment."
@@ -189,6 +200,10 @@ function FeaturesSection() {
           text="Get ready to discover new music that perfectly fits your taste! Our platform will suggest emerging artists based on your preferences. Simply browse through their profiles, listen to their music, and follow them to stay informed about their latest work."
         />,
       ],
+      HowItWorks1: "Set up you profile.",
+      HowItWorks2: "Discover events and new music.",
+      HowItWorks3: "Buy tickets for gigs.",
+      HowItWorks4: "Enjoy great music and make new memeories!",
     },
   ];
 
@@ -228,6 +243,46 @@ function FeaturesSection() {
           </div>
           <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center text-center mt-10 gap-12 lg:gap-[5rem] my-5">
             {targetTypes[currentIndex].advantages}
+          </div>
+        </div>
+
+        <div
+          className="flex flex-col items-center gap-10 mt-[10rem] mx-1 mobile:mx-0"
+          data-aos="fade-up"
+        >
+          <h1 className="font-clashDisplay text-[2rem] sm:text-[3rem] text-white">
+            How it works
+          </h1>
+          <div
+            className="mt-[3rem] stroke-transparent bg-contain bg-center bg-no-repeat relative w-full"
+            style={{ backgroundImage: `url(${line})` }}
+          >
+            <div className="flex flex-col mobile:grid grid-cols-2 grid-rows-4 gap-y-1 md:gap-y-[4rem] gap-x-[3rem]">
+              <div className="col-span-1 row-span-1">
+                <FeaturesHowTo
+                  text={targetTypes[currentIndex].HowItWorks1}
+                  number="1."
+                />
+              </div>
+              <div className="col-start-2 col-end-2 row-start-2">
+                <FeaturesHowTo
+                  text={targetTypes[currentIndex].HowItWorks2}
+                  number="2."
+                />
+              </div>
+              <div className="col-start-1 col-end-1 row-start-3">
+                <FeaturesHowTo
+                  text={targetTypes[currentIndex].HowItWorks3}
+                  number="3."
+                />
+              </div>
+              <div className="col-start-2 col-end-2 row-start-4">
+                <FeaturesHowTo
+                  text={targetTypes[currentIndex].HowItWorks4}
+                  number="4."
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
