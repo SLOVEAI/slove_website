@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npm workspace backend run dev\" \"npm workspace frontend run dev\" ",
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\" ",
     "tsc:check": "npm workspaces run tsc:check",
     "lint": "npm workspaces run lint"
   },

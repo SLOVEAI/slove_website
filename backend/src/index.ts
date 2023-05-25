@@ -12,11 +12,11 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-app.get("/", async (_, res) => {
+app.get('/', async (_, res) => {
   res.send({
-    res: "SLOVE backend is running!",
-  });
-});
+    res: 'SLOVE backend is running!',
+  })
+})
 
 app.listen(PORT, () => {
   console.log(`Server started and listening on port ${PORT} 🔥`);

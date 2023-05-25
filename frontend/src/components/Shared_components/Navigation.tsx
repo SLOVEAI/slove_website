@@ -5,6 +5,8 @@ import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { BACKEND_URL } from "../../constants";
 
 import logo from "../../../assets/shared_components_imgs/Slove_logo.svg";
 
@@ -53,6 +55,19 @@ function Navigation() {
   const goToTestApp = () => {
     let path = `/testApp`;
     navigate(path);
+  };
+
+  const handleButtonClick = () => {
+    axios
+      .get(`${BACKEND_URL}`) // Replace '/api/endpoint' with the actual endpoint of your backend API
+      .then((response) => {
+        // Handle the successful response from the backend
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // Handle any errors that occur during the API call
+        console.error(error);
+      });
   };
 
   return (
@@ -108,6 +123,9 @@ function Navigation() {
                       onClick={goToTestApp}
                       className="py-1 px-4 rounded-xl bg-secondaryColor_lilac hover:bg-secondaryColor_lightLilac transition ease-in-out"
                     />
+                  </li>
+                  <li>
+                    <button onClick={handleButtonClick}>text</button>
                   </li>
                   <li className="hidden">
                     <Button

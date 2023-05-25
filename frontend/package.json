@@ -52,7 +52,7 @@
     "dev": "webpack serve",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
-    "start": "react-scripts start",
+    "start": "webpack serve --mode=development",
     "build": "webpack",
     "test": "react-scripts test",
     "tsc:check": "tsc --noEmit",
