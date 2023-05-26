@@ -8,6 +8,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, "dist"), // the bundle output path
   },
+  devtool: "eval-source-map",
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html", // to import index.html file inside index.js

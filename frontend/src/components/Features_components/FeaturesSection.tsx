@@ -235,7 +235,10 @@ function FeaturesSection() {
                     : "bg-white text-black p-1 sm:p-2 w-[5.5rem] mobile:w-[7rem] sm:w-[9rem] rounded-full"
                 }
               >
-                <h1 className="text-md sm:text-xl cursor-pointer">
+                <h1
+                  className="text-md sm:text-xl cursor-pointer"
+                  key={targetIndex}
+                >
                   {targetType.type}
                 </h1>
               </div>

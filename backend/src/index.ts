@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+const path = require("path");
 import bodyParser from "body-parser";
 import cors from "cors";
 import { isDevelopmentMode } from "./utils";
@@ -11,6 +12,8 @@ app.use(morgan("combined"));
 app.use(bodyParser.json());
 
 app.use(cors());
+
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('/', async (_, res) => {
   res.send({
