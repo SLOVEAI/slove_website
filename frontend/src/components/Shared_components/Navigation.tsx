@@ -59,7 +59,7 @@ function Navigation() {
 
   const handleButtonClick = () => {
     axios
-      .get(`${BACKEND_URL}/api`) // Replace '/api/endpoint' with the actual endpoint of your backend API
+      .get(`${BACKEND_URL}/`) // Replace '/api/endpoint' with the actual endpoint of your backend API
       .then((response) => {
         // Handle the successful response from the backend
         console.log(response.data);
