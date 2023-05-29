@@ -138,7 +138,9 @@ function Navigation() {
                     />
                   </li>
                   <li>
-                    <button onClick={handleButtonClick}>text</button>
+                    <button type="button" onClick={handleButtonClick}>
+                      text
+                    </button>
                   </li>
                   <li className="hidden">
                     <Button

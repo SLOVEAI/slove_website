@@ -15,12 +15,14 @@ app.use(cors());
 
 if (!isDevelopmentMode) {
   app.use(express.static(path.resolve(__dirname, './frontend/dist')));
+
   app.get('/', async (_, res) => {
-    res.json({
-      message: 'SLOVE backend is running!',
-    })
+    res.json('SLOVE backend is running!')
   })
-  console.log("is production mode.");
+
+  app.get('*', async (_, res) => {
+    res.sendFile(path.join(__dirname, "dist", "index.html"))
+  })
 } else {
   app.get('/', async (_, res) => {
     res.json({
@@ -30,11 +32,6 @@ if (!isDevelopmentMode) {
   console.log("is development mode.");
 }
 
-// app.get('/*', async (_, res) => {
-//   res.json({
-//     message: 'SLOVE backend is running!',
-//   })
-// })
 
 app.listen(PORT, () => {
   console.log(`Server started and listening on port ${PORT} 🔥`);
