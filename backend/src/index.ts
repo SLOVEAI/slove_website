@@ -20,8 +20,8 @@ if (!isDevelopmentMode) {
     res.json('SLOVE backend is running!')
   })
 
-  app.get('*', async (_, res) => {
-    res.sendFile(path.join(__dirname, "dist", "index.html"))
+  app.get('/*', async (_, res) => {
+    res.sendFile(path.join(__dirname, './frontend/dist', "index.html"))
   })
 } else {
   app.get('/', async (_, res) => {
