@@ -19,7 +19,7 @@ function TermsSection() {
         data-aos="fade-left"
       >
         <section className="flex flex-col px-[2rem] sm:px-[5rem] md:px-[10rem] px-[15rem]">
-          <h1 className="font-clashDisplay text-[2.2rem] mobile:text-[3.5rem] text-primaryColor_lightBlue mb-[2rem] mobile:mb-[4rem] self-center">
+          <h1 className="font-clashDisplay text-[2.2rem] mobile:text-[3.5rem] mb-[2rem] mobile:mb-[4rem] self-center">
             Terms & Conditions
           </h1>
           <p>

@@ -15,7 +15,7 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get('/', async (_, res) => {
+app.get('/*', async (_, res) => {
   res.json({
     message: 'SLOVE backend is running!',
   })

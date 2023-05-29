@@ -104,7 +104,7 @@ function FeaturesSection() {
           text="Looking to connect with other music professionals? Our platform is the perfect place for networking opportunities, mentorship, or finding new band members. Designed to make it easy for you to connect and collaborate with like-minded individuals, trust us to provide a safe and user-friendly environment to help you achieve your goals and advance your music career. Get discovered by other industry professionals today!"
         />,
       ],
-      HowItWorks1: "Set up you profile.",
+      HowItWorks1: "Set up your profile.",
       HowItWorks2: "Reach out to venues for your next gig.",
       HowItWorks3: "Discuss everything about the gig.",
       HowItWorks4: "Time to perform - Have fun!",
@@ -161,7 +161,7 @@ function FeaturesSection() {
           text="You can effortlessly connect and communicate with anyone in the community, and you have full control over who can directly contact you. Plus, our user-friendly chat functionality assures that you can safely and securely network and collaborate with others in the music industry."
         />,
       ],
-      HowItWorks1: "Set up you profile.",
+      HowItWorks1: "Set up your profile.",
       HowItWorks2: "Reach out to musicians you like.",
       HowItWorks3: "Discuss your gigs.",
       HowItWorks4: "It's time for your event - Have fun!",
@@ -200,7 +200,7 @@ function FeaturesSection() {
           text="Get ready to discover new music that perfectly fits your taste! Our platform will suggest emerging artists based on your preferences. Simply browse through their profiles, listen to their music, and follow them to stay informed about their latest work."
         />,
       ],
-      HowItWorks1: "Set up you profile.",
+      HowItWorks1: "Set up your profile.",
       HowItWorks2: "Discover events and new music.",
       HowItWorks3: "Buy tickets for gigs.",
       HowItWorks4: "Enjoy great music and make new memeories!",

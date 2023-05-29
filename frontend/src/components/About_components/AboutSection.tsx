@@ -40,7 +40,7 @@ function AboutSection() {
           <div className="absolute -inset-1 bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-lg blur opacity-25"></div>
           <div className="relative border gap-10 px-[3rem] md:px-[6rem] py-[4rem] border-secondaryColor_purple bg-[#1A1A1A] ring-1 ring-gray-900/5 rounded-lg leading-none flex flex-col items-top justify-start">
             <h2 className="font-clashDisplay text-[2rem] sm:text-[3rem] text-white">
-              About Us
+              Our company
             </h2>
             <div className="flex flex-col-reverse lg:flex-row pr-0 xl:pr-[4rem] gap-10 lg:gap-[5rem] items-center text-justify">
               <p className="leading-7">

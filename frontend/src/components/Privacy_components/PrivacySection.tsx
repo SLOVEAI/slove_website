@@ -19,7 +19,7 @@ function PrivacySection() {
         data-aos="fade-left"
       >
         <section className="flex flex-col gap-2 px-[2rem] sm:px-[5rem] md:px-[10rem] lg:px-[15rem]">
-          <h1 className="font-clashDisplay text-[2.8rem] mobile:text-[3.5rem] text-primaryColor_lightBlue mb-[4rem] self-center">
+          <h1 className="font-clashDisplay text-[2.8rem] mobile:text-[3.5rem] mb-[4rem] self-center">
             Privacy Policy
           </h1>
           <p>

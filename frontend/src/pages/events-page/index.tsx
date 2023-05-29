@@ -1,10 +1,10 @@
 import React from "react";
+import EventsSection from "../../components/Events_components/EventsSection";
 
 const EventsPage = () => {
   return (
-    <div className="font-clashDisplay text-center py-[3rem]">
-      <h1 className="text-primaryColor_lightBlue text-[4rem]">Coming Soon</h1>
-      <h1 className="text-[2rem] text-white">Events page</h1>
+    <div className="scroll-smooth overflow-hidden">
+      <EventsSection />;
     </div>
   );
 };

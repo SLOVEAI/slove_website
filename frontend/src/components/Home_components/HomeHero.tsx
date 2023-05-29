@@ -63,9 +63,9 @@ function HomeHero() {
             />
           </div>
           <Button
-            label="Become a tester"
+            label="Join Us"
             onClick={goToTestApp}
-            className="whitespace-nowrap self-center mt-2 lg:self-start py-3 px-[6rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white border border-black hover:bg-primaryColor_darkTurquoise transition ease-in-out"
+            className="whitespace-nowrap self-center mt-2 lg:self-start py-3 px-[6rem] text-[1rem] xl:text-[1vw] rounded-full bg-primaryColor_turquoise text-white hover:bg-primaryColor_darkTurquoise transition ease-in-out"
           />
         </section>
         <section className="hidden lg:block mr-[2rem]" data-aos="fade-up">

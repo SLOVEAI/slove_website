@@ -17,12 +17,16 @@ function BlogSection() {
 
   return (
     <>
-      <div
-        className="font-clashDisplay text-center py-[3rem]"
-        data-aos="fade-left"
-      >
-        <h1 className="text-primaryColor_lightBlue text-[4rem]">Coming Soon</h1>
-        <h1 className="text-[2rem] text-white">Blog page</h1>
+      <div className="font-manrope text-center py-[3rem]" data-aos="fade-left">
+        <h1 className="font-clashDisplay text-[2rem] sm:text-[3rem] text-white">
+          Blog
+        </h1>
+
+        <div className="border border-primaryColor_lightBlue rounded-xl p-10 mt-[5rem] mx-[3rem] sm:mx-[10rem] lg:mx-[20rem]">
+          <h1 className="text-[1rem] lg:text-[2rem] text-white">
+            No blog post are available
+          </h1>
+        </div>
 
         <div className="mt-10 hidden flex-col text-left mx-[20rem]">
           <BlogCard
