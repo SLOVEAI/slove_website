@@ -66,7 +66,7 @@ function Navigation() {
       })
       .catch((error) => {
         // Handle any errors that occur during the API call
-        console.error(error);
+        console.log(error);
       });
 
     // const testdata = {
