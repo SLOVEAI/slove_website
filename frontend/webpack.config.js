@@ -19,7 +19,6 @@ const config = {
   devServer: {
     open: true,
     host: "localhost",
-    contentBase: path.join(__dirname, "dist"),
     historyApiFallback: { index: "/" },
     proxy: {
       "/api": {

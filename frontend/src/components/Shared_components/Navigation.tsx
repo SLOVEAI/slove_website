@@ -57,9 +57,9 @@ function Navigation() {
     navigate(path);
   };
 
-  const handleButtonClick = () => {
+  const handleButtonClick = async () => {
     axios
-      .get(`${BACKEND_URL}`) // Replace '/api/endpoint' with the actual endpoint of your backend API
+      .get(`${BACKEND_URL}`)
       .then((response) => {
         // Handle the successful response from the backend
         console.log(response.data);
@@ -68,6 +68,16 @@ function Navigation() {
         // Handle any errors that occur during the API call
         console.error(error);
       });
+
+    // const testdata = {
+    //   name: "test this app !!!",
+    // };
+    // try {
+    //   const response = await axios.post(`${BACKEND_URL}/`, testdata);
+    //   console.log(response.data);
+    // } catch (error) {
+    //   console.error(error);
+    // }
   };
 
   return (
