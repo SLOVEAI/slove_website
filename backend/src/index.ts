@@ -22,7 +22,7 @@ if (!isDevelopmentMode) {
   })
   console.log("is production mode.");
 } else {
-  app.get('/*', async (_, res) => {
+  app.get('/', async (_, res) => {
     res.json({
       message: 'SLOVE backend is running!',
     })

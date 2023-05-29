@@ -63,6 +63,9 @@ function Navigation() {
       .then((response) => {
         // Handle the successful response from the backend
         console.log(response.data);
+        console.log(response.status);
+        console.log(response.headers);
+        console.log(response.config);
       })
       .catch((error) => {
         // Handle any errors that occur during the API call
