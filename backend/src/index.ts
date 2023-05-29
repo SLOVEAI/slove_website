@@ -13,9 +13,14 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, 'dist')));
+if (!isDevelopmentMode) {
+  app.use(express.static(path.resolve(__dirname, 'dist')));
+  console.log("is production mode.")
+} else {
+  console.log("is development mode.")
+}
 
-app.get('/', async (_, res) => {
+app.get('/*', async (_, res) => {
   res.json({
     message: 'SLOVE backend is running!',
   })
