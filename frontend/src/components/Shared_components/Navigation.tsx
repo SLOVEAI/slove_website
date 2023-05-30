@@ -59,7 +59,7 @@ function Navigation() {
 
   const handleButtonClick = async () => {
     await axios
-      .get(`${BACKEND_URL}`)
+      .get(`${BACKEND_URL}/test`)
       .then((response) => {
         // Handle the successful response from the backend
         console.log(response.data);

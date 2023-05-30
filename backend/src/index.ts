@@ -1,37 +1,26 @@
 import express from "express";
 import morgan from "morgan";
-const path = require("path");
-// import bodyParser from "body-parser";
+// const path = require("path");
+import bodyParser from "body-parser";
 import cors from "cors";
+import { TestRoute } from "./test";
 import { isDevelopmentMode } from "./utils";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(morgan("combined"));
-app.use(express.json());
+app.use(bodyParser.json())
 
 app.use(cors());
 
-if (!isDevelopmentMode) {
-  app.use(express.static(path.resolve(__dirname, './frontend/dist')));
+app.use('/test', TestRoute)
 
-  app.get('/', async (_, res) => {
-    res.json('SLOVE backend is running!')
+app.get('/', async (_, res) => {
+  res.send({
+    message: 'SLOVE backend is running!',
   })
-
-  app.get('/*', async (_, res) => {
-    res.sendFile(path.join(__dirname, './frontend/dist', "index.html"))
-  })
-} else {
-  app.get('/', async (_, res) => {
-    res.json({
-      message: 'SLOVE backend is running!',
-    })
-  })
-  console.log("is development mode.");
-}
-
+})
 
 app.listen(PORT, () => {
   console.log(`Server started and listening on port ${PORT} 🔥`);
