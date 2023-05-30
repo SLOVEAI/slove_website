@@ -6,16 +6,14 @@ const isProduction = process.env.NODE_ENV == "production";
 const config = {
   entry: "./src/index.tsx",
   output: {
-    publicPath: "auto",
-    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"), // the bundle output path
   },
   devtool: "eval-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      template: "public/index.html", // to import index.html file inside index.js
+      template: "src/index.html", // to import index.html file inside index.js
       minify: false,
-      favicon: "public/favicon.ico",
+      favicon: "src/favicon.ico",
     }),
   ],
   devServer: {
