@@ -1,9 +1,11 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import BlogCard from "./BlogCard";
-import testimg from "../../../assets/blog_imgs/blog_test_img.png";
+import blogimg2 from "../../../assets/blog_imgs/blog_test_img.png";
+import blogimg1 from "../../../assets/blog_imgs/blogPost_img.png";
 
 function BlogSection() {
   useEffect(() => {
@@ -22,17 +24,19 @@ function BlogSection() {
           Blog
         </h1>
 
-        <div className="border border-primaryColor_lightBlue rounded-xl p-10 mt-[5rem] mx-[3rem] sm:mx-[10rem] lg:mx-[20rem]">
-          <h1 className="text-[1rem] lg:text-[2rem] text-white">
-            No blog post are available
-          </h1>
-        </div>
-
-        <div className="mt-10 hidden flex-col text-left mx-[20rem]">
+        <div className="mt-10 gap-[7rem] flex flex-col text-left mx-[2rem] mobile:mx-[5rem] md:mx-[10rem] lg:mx-[15rem] xl:mx-[20rem]">
           <BlogCard
+            selectedId="1"
             blog_title="SLOVE EPK"
             date="1 Feb, 2023"
-            image={testimg}
+            image={blogimg1}
+            description="We're proud to offer a reliable and user-friendly interface for your electronic press kit (EPK) needs. Our platform is designed to adapt and evolve based on your actions, feedback from listeners, and your past and upcoming performances, ensuring that your EPK is always up-to-date and accurate."
+          />
+          <BlogCard
+            selectedId="2"
+            blog_title="SLOVE EPK"
+            date="1 Feb, 2023"
+            image={blogimg2}
             description="We're proud to offer a reliable and user-friendly interface for your electronic press kit (EPK) needs. Our platform is designed to adapt and evolve based on your actions, feedback from listeners, and your past and upcoming performances, ensuring that your EPK is always up-to-date and accurate."
           />
         </div>

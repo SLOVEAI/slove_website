@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request } from "express";
 import morgan from "morgan";
 // const path = require("path");
 import bodyParser from "body-parser";
@@ -10,17 +10,17 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(morgan("combined"));
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
-app.use(cors());
+app.use(cors<Request>());
 
-app.use('/test', TestRoute)
+app.use("/test", TestRoute);
 
-app.get('/', async (_, res) => {
+app.get("/", async (_, res) => {
   res.send({
-    message: 'SLOVE backend is running!',
-  })
-})
+    message: "SLOVE backend is running!",
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Server started and listening on port ${PORT} 🔥`);

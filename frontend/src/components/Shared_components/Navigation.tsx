@@ -71,16 +71,6 @@ function Navigation() {
         // Handle any errors that occur during the API call
         console.log(error);
       });
-
-    // const testdata = {
-    //   name: "test this app !!!",
-    // };
-    // try {
-    //   const response = await axios.post(`${BACKEND_URL}/`, testdata);
-    //   console.log(response.data);
-    // } catch (error) {
-    //   console.error(error);
-    // }
   };
 
   return (
