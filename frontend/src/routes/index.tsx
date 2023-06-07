@@ -45,7 +45,7 @@ export enum EnumRoutes {
   venueProfile = "/venueProfile",
   testApp = "/testApp",
   thanks = "/thanks",
-  blogPost = "/blogpost/:id",
+  blogPost = "/blog/:id",
 }
 
 export const AppRoutes = () => {

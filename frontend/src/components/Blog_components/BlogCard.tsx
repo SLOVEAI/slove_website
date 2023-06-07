@@ -24,7 +24,7 @@ const BlogCard: React.FC<BlogPageProps> = ({
   } else {
     return (
       <>
-        <Link to={`/blogpost/${selectedPost.id}`}>
+        <Link to={`/blog/${selectedPost.id}`}>
           <div className="mx-auto" key={selectedPost.id}>
             <div className="relative group text-white">
               <div className="absolute -inset-1 bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-3xl blur opacity-25"></div>

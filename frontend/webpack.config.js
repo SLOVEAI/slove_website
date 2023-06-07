@@ -6,6 +6,8 @@ const isProduction = process.env.NODE_ENV == "production";
 const config = {
   entry: "./src/index.tsx",
   output: {
+    filename: "main.js",
+    publicPath: "/",
     path: path.resolve(__dirname, "dist"), // the bundle output path
   },
   devtool: "eval-source-map",
@@ -19,7 +21,7 @@ const config = {
   devServer: {
     open: true,
     host: "localhost",
-    historyApiFallback: { index: "/" },
+    historyApiFallback: true,
     proxy: {
       "/api": {
         target: "http://localhost:4000",
