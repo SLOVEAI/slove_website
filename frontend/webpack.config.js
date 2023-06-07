@@ -21,7 +21,7 @@ const config = {
   devServer: {
     open: true,
     host: "localhost",
-    historyApiFallback: true,
+    historyApiFallback: { index: "/" },
     proxy: {
       "/api": {
         target: "http://localhost:4000",
