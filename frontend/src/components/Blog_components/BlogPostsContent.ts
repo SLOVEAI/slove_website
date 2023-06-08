@@ -21,7 +21,7 @@ export const blogPosts: BlogPostInterface[] = [
       "Choose SLOVE's EPK: The Ultimate Digital Solution for Musicians",
     blogAuthor: "by Gabbi",
     blogTime: "5min",
-    blogDate: "1 Feb 2023",
+    blogDate: "16 May 2023",
     tags: ["Inspiration", "Musician", "Interview", "Carrer"],
     postSummary: [
       "So, what’s this about musicians in dire need of an EPK? An Electronic Press Kit is your number one go to if you are an artist, or band, who wants their resume digitally packaged, neatly and completely!",

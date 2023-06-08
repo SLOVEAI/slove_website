@@ -27,7 +27,7 @@ function BlogSection() {
           <BlogCard
             selectedId="1"
             blog_title="SLOVE EPK"
-            date="1 Feb, 2023"
+            date="16 May, 2023"
             image={blogimg1}
             description="We're proud to offer a reliable and user-friendly interface for your electronic press kit (EPK) needs. Our platform is designed to adapt and evolve based on your actions, feedback from listeners, and your past and upcoming performances, ensuring that your EPK is always up-to-date and accurate."
           />
