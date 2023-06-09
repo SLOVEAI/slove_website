@@ -22,7 +22,7 @@ export const blogPosts: BlogPostInterface[] = [
     blogAuthor: "by Gabbi",
     blogTime: "5min",
     blogDate: "16 May 2023",
-    tags: ["Inspiration", "Musician", "Interview", "Carrer"],
+    tags: ["Inspiration", "Musician", "Interview", "Career"],
     postSummary: [
       "So, what’s this about musicians in dire need of an EPK? An Electronic Press Kit is your number one go to if you are an artist, or band, who wants their resume digitally packaged, neatly and completely!",
       "If you’re thinking, “Sounds like music to my ears!” then SLOVE’sgot you covered with all the detailed information you, or your band, need in order to create and present an EPK that will wow them all. This is a digital showcase with a sole purpose to attract and inform whoever visits. When we say whoever, that entails both listeners and important contacts you need for your career. We’re talking record labels, venues, bookers, promoters, talent buyers etc. The whole kit. Your EPK should be a complementary to your music website (if you have one) and should never be forgotten when reaching out to industry professionals. It’s also a selling point – so what you present definitely matters to who’s reading. This should be a pinnacle piece for your music portfolio that encapsulates who you, your band, are as artists. By using SLOVE’s EPK platform, we’ll make sure you create the best digital presentation that will draw everyone’s attention!",
@@ -104,14 +104,13 @@ export const blogPosts: BlogPostInterface[] = [
   {
     id: "2",
     blog_img: hero2,
-    blogTitle: "the title2",
+    blogTitle: "Booking Process",
     blogAuthor: "By Gabbi",
     blogTime: "5min",
-    blogDate: "5 Feb 2023",
+    blogDate: "26 May 2023",
     tags: ["tag1", "tag2", "tag3", "tag4"],
     postSummary: [
-      "So, what’s this about musicians in dire need of an EPK? An Electronic Press Kit is your number one go to if you are an artist, or band, who wants their resume digitally packaged, neatly and completely!",
-      "If you’re thinking, “Sounds like music to my ears!” then SLOVE’sgot you covered with all the detailed information you, or your band, need in order to create and present an EPK that will wow them all. This is a digital showcase with a sole purpose to attract and inform whoever visits. When we say whoever, that entails both listeners and important contacts you need for your career. We’re talking record labels, venues, bookers, promoters, talent buyers etc. The whole kit. Your EPK should be a complementary to your music website (if you have one) and should never be forgotten when reaching out to industry professionals. It’s also a selling point – so what you present definitely matters to who’s reading. This should be a pinnacle piece for your music portfolio that encapsulates who you, your band, are as artists. By using SLOVE’s EPK platform, we’ll make sure you create the best digital presentation that will draw everyone’s attention!",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     ],
     sections: [
       {

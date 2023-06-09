@@ -33,8 +33,8 @@ function BlogSection() {
           />
           <BlogCard
             selectedId="2"
-            blog_title="SLOVE EPK"
-            date="1 Feb, 2023"
+            blog_title="Booking process"
+            date="26 May, 2023"
             image={blogimg2}
             description="We're proud to offer a reliable and user-friendly interface for your electronic press kit (EPK) needs. Our platform is designed to adapt and evolve based on your actions, feedback from listeners, and your past and upcoming performances, ensuring that your EPK is always up-to-date and accurate."
           />

@@ -63,7 +63,7 @@ const BlogPost: React.FC = () => {
             </section>
           </div>
 
-          <div className="flex flex-row items-start justify-center mx-[3rem] gap-[4rem] mt-10">
+          <div className="flex mx-[3rem] gap-[4rem] mt-10">
             <section className="flex flex-col ml-0 md:ml-[10rem]">
               <div className="flex flex-col text-justify leading-7 gap-5">
                 {selectedPost.postSummary.map((paragraph, i) => (
@@ -86,7 +86,7 @@ const BlogPost: React.FC = () => {
               </div>
             </section>
 
-            <section className="hidden md:block flex-1 grow py-4 px-7 border border-secondaryColor_purple rounded-xl">
+            <section className="hidden sticky h-full top-0 md:block flex-none py-4 px-7 border border-secondaryColor_purple rounded-xl">
               {selectedPost.sections.map((section, index) => (
                 <ul
                   key={index}
