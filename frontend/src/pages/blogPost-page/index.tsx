@@ -3,7 +3,7 @@ import BlogPostLayout1 from "../../components/Blog_components/BlogPostLayout1";
 
 const BlogPostPage = () => {
   return (
-    <div className="scroll-smooth overflow-hidden">
+    <div className="scroll-smooth">
       <BlogPostLayout1 />
     </div>
   );

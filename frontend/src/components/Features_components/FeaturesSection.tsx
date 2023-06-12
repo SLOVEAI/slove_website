@@ -256,11 +256,12 @@ function FeaturesSection() {
           <h1 className="font-clashDisplay text-[2rem] sm:text-[3rem] text-white">
             How it works
           </h1>
-          <div
-            className="mt-[3rem] stroke-transparent bg-contain bg-center bg-no-repeat relative w-full"
-            style={{ backgroundImage: `url(${line})` }}
-          >
-            <div className="flex flex-col mobile:grid grid-cols-2 grid-rows-4 gap-y-1 md:gap-y-[4rem] gap-x-[3rem]">
+          <div className="relative group mt-[3rem]">
+            <div
+              className="hidden mobile:block absolute -inset-1 bg-contain bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${line})` }}
+            ></div>
+            <div className="relative flex flex-col gap-10 mobile:grid grid-cols-2 grid-rows-4 mobile:gap-y-1 md:gap-y-[4rem] mobile:gap-x-[3rem] mx-[-2rem] md:mx-0 my-[-3rem] md:my-[-2rem]">
               <div className="col-span-1 row-span-1">
                 <FeaturesHowTo
                   text={targetTypes[currentIndex].HowItWorks1}

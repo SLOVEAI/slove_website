@@ -26,7 +26,7 @@ function BlogPostLayout1() {
     <>
       <div
         className="text-white flex flex-col my-0 md:my-10 gap-8 font-manrope"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <Button
           label="Back"
