@@ -33,8 +33,8 @@ function HomeHero() {
           className="flex flex-col gap-5 ml-1 md:ml-5 lg:ml-[7rem] items-center mb-[2rem] lg:mb-0 lg:items-start mr-[1rem] pt-1"
           data-aos="fade-right"
         >
-          <h1 className="font-clashDisplay text-[3.2rem] xl:text-[3.5vw] text-white">
-            Live music from the roots.
+          <h1 className="font-clashDisplay text-[2rem] sm:text-[3.2rem] xl:text-[3.5vw] text-white">
+            Democratizing live gigs for the grassroots
           </h1>
           <p className="font-manrope text-[1rem] xl:text-[1vw] mr-0 lg:mr-[7rem] text-white">
             Connect venues with musicians and bring the fans to events. That has
