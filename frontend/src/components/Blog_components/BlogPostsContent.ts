@@ -1,5 +1,6 @@
 import hero1 from "../../../assets/blog_imgs/blogPost_img.png";
 import hero2 from "../../../assets/blog_imgs/blog_test_img.png";
+import mobiletestimg from "../../../assets/blog_imgs/app_mockup.png";
 
 export default interface BlogPostInterface {
   id: string;
@@ -10,7 +11,7 @@ export default interface BlogPostInterface {
   blogDate: string;
   tags: string[];
   postSummary: string[];
-  sections: { header: string; content: string[] }[];
+  sections: { header: string; content: string[]; sectionImgs?: any }[];
 }
 
 export const blogPosts: BlogPostInterface[] = [
@@ -110,32 +111,74 @@ export const blogPosts: BlogPostInterface[] = [
     blogDate: "26 May 2023",
     tags: ["tag1", "tag2", "tag3", "tag4"],
     postSummary: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "Both venues and musicians can send booking requests to another. We have 2 easy ways to initiate a booking request.",
+      "Option 1: Booking request initiated from the “Recommendations” tab.",
+      "Option 2: Booking request initiated from the “Discover” tab.",
+      "Once you’ve clicked on either option, follow the next steps:",
     ],
     sections: [
       {
-        header: "Header 1",
+        header: "Initial booking request",
         content: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          "One of the parties initiates a booking request which includes a genre, a date, time and an introductory message.",
         ],
+        sectionImgs: mobiletestimg,
       },
       {
-        header: "Header 2",
+        header: "Response from the receiver",
         content: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          "Choice 1: Accept Request.",
+          "If they accept the initial booking request, that means they are in agreement with the proposed date, time, and overall information that was previously sent by the other party. Now that both participants agree, they will proceed to further discuss a booking price, specific requirements and lastly, sign a contract to complete the booking process. The gig will follow up after completing these stages of the booking process.",
+          "Choice 2: Modify Request",
+          "Here the receiver is able to initiate a dialogue with the other party via a chat functionality. This is optional for those interested in the booking request but want to make any additional changes such time, date, genre or have other requirements. Once the negotiation on the chat is done and both parties have agreed upon a new time, date, genre, booking price or requirements, what remains is signing a contract after the agreement. The gig will take place after completing these stages of the booking process.",
+          "Choice 3: Decline the request",
+          "The receiving party also has the option to decline the request. No gig is further initiated from here.",
         ],
+        sectionImgs: mobiletestimg,
       },
       {
-        header: "Header 3",
+        header: "Negotiation",
         content: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          "As previously mentioned, choice number 1 and 2 are meant for negotiating. Here is your chance to inform and discuss all details required for the event and to further complete the booking process.",
         ],
+        sectionImgs: mobiletestimg,
       },
       {
-        header: "Header 4",
+        header: "Contract Signing",
         content: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          "Only venues can initiate this action.",
+          "For the venue party to find this procedure, you will find the option in the chat window, which is located at the top, to the right where it says “Send Contract”.",
+          "The venue is responsible for including all the agreed upon factors into the system and for creating a contract. They send the contract to the musicians.",
         ],
+        sectionImgs: mobiletestimg,
+      },
+      {
+        header: "Confirmation",
+        content: [
+          "Musicians need to respond to the contract by either approving, declining or renegotiation. If the musician declines, then the contract will be terminated. If the musician renegotiates, then a further negotiation will take place until there is a mutual agreement that leads to a signed contract.",
+        ],
+        sectionImgs: mobiletestimg,
+      },
+      {
+        header: "Creating the Gig",
+        content: [
+          "Once the venue receives a confirmation from the musician, the venue can then close the process by submitting the relevant details to generate an invoice from SLOVE.",
+        ],
+        sectionImgs: mobiletestimg,
+      },
+      {
+        header: "Invoice",
+        content: [
+          "SLOVE will generate an invoice based on the details provided by the venues and will send it to the venue via email after the event.",
+        ],
+        sectionImgs: mobiletestimg,
+      },
+      {
+        header: "Payment",
+        content: [
+          "Musicians will receive their payment from SLOVE as soon as the venue has paid SLOVE. Usually, this process can take up to 30 days.",
+        ],
+        sectionImgs: mobiletestimg,
       },
     ],
   },

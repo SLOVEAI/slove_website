@@ -46,7 +46,7 @@ const BlogPost: React.FC = () => {
             ))}
           </section>
 
-          <section className="flex-1 md:hidden grow py-4 px-7 border border-secondaryColor_purple rounded-xl">
+          <section className="flex-1 lg:hidden grow py-4 px-7 border border-secondaryColor_purple rounded-xl">
             {selectedPost.sections.map((section, index) => (
               <ul
                 key={index}
@@ -63,7 +63,7 @@ const BlogPost: React.FC = () => {
         </div>
 
         <div className="flex flex-row mx-[3rem] gap-[4rem] mt-10">
-          <section className="ml-0 md:ml-[10rem] flex flex-col text-justify leading-7 gap-5">
+          <section className="ml-0 lg:ml-[10rem] flex flex-col text-justify leading-7 gap-5">
             {selectedPost.postSummary.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
@@ -76,14 +76,30 @@ const BlogPost: React.FC = () => {
                 >
                   {section.header}
                 </h2>
-                {section.content.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
+                <div className="flex flex-col gap-5">
+                  <div className="self-start">
+                    {section.content.map((paragraph, i) => (
+                      <p key={i} className="self-start">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+
+                  {section.sectionImgs !== undefined ? (
+                    <img
+                      src={section.sectionImgs}
+                      alt="section_img"
+                      className="self-center object-cover w-[20rem]"
+                    />
+                  ) : (
+                    <h1 className="hidden">not available</h1>
+                  )}
+                </div>
               </div>
             ))}
           </section>
 
-          <section className="hidden sticky h-full top-[3rem] md:flex flex-col py-4 px-7 border border-secondaryColor_purple rounded-xl">
+          <section className="hidden sticky h-full top-[3rem] lg:flex flex-col py-4 px-7 border border-secondaryColor_purple rounded-xl">
             {selectedPost.sections.map((section, index) => (
               <Link smooth to={"#" + section.header}>
                 <h3

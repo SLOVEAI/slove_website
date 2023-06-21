@@ -25,8 +25,8 @@ function PrivacySection() {
           <p>
             Slove.ai respects your privacy and is committed to protecting your
             personal data. This privacy statement will inform you about how we
-            handle your personal information when you use our website.
-            Collection and Use of Personal Information
+            handle your personal information when you use our website and
+            platform. Collection and Use of Personal Information
           </p>
           <p>
             We may collect and process personal information that you provide to
@@ -37,10 +37,10 @@ function PrivacySection() {
           <ul className="list-disc ml-8 flex flex-col gap-2">
             <li>
               Provide you with the products, services, or information that you
-              request;
+              request.
             </li>
-            <li>Respond to your inquiries or comments;</li>
-            <li>Analyze and improve our website and services;</li>
+            <li>Respond to your inquiries or comments.</li>
+            <li>Analyze and improve our website and services.</li>
             <li>
               Communicate with you about our products, services, and promotions.
             </li>
