@@ -127,11 +127,11 @@ export const blogPosts: BlogPostInterface[] = [
       {
         header: "Response from the receiver",
         content: [
-          "Choice 1: Accept Request.",
+          "Choice 1: Accept Request",
           "If they accept the initial booking request, that means they are in agreement with the proposed date, time, and overall information that was previously sent by the other party. Now that both participants agree, they will proceed to further discuss a booking price, specific requirements and lastly, sign a contract to complete the booking process. The gig will follow up after completing these stages of the booking process.",
           "Choice 2: Modify Request",
           "Here the receiver is able to initiate a dialogue with the other party via a chat functionality. This is optional for those interested in the booking request but want to make any additional changes such time, date, genre or have other requirements. Once the negotiation on the chat is done and both parties have agreed upon a new time, date, genre, booking price or requirements, what remains is signing a contract after the agreement. The gig will take place after completing these stages of the booking process.",
-          "Choice 3: Decline the request",
+          "Choice 3: Decline the Request",
           "The receiving party also has the option to decline the request. No gig is further initiated from here.",
         ],
         sectionImgs: mobiletestimg,

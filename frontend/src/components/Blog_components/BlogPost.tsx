@@ -76,25 +76,48 @@ const BlogPost: React.FC = () => {
                 >
                   {section.header}
                 </h2>
-                <div className="flex flex-col gap-5">
-                  <div className="self-start">
-                    {section.content.map((paragraph, i) => (
-                      <p key={i} className="self-start">
-                        {paragraph}
-                      </p>
-                    ))}
-                  </div>
 
-                  {section.sectionImgs !== undefined ? (
-                    <img
-                      src={section.sectionImgs}
-                      alt="section_img"
-                      className="self-center object-cover w-[20rem]"
-                    />
-                  ) : (
-                    <h1 className="hidden">not available</h1>
-                  )}
-                </div>
+                {index % 2 == 0 ? (
+                  <div className="flex flex-col xl:flex-row gap-5">
+                    <div className="self-start">
+                      {section.content.map((paragraph, i) => (
+                        <p key={i} className="self-start">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+
+                    {section.sectionImgs !== undefined ? (
+                      <img
+                        src={section.sectionImgs}
+                        alt="section_img"
+                        className="self-center object-cover w-[20rem]"
+                      />
+                    ) : (
+                      <h1 className="hidden">not available</h1>
+                    )}
+                  </div>
+                ) : (
+                  <div className="flex flex-col flex-col-reverse xl:flex-row gap-5">
+                    {section.sectionImgs !== undefined ? (
+                      <img
+                        src={section.sectionImgs}
+                        alt="section_img"
+                        className="self-center object-cover w-[20rem]"
+                      />
+                    ) : (
+                      <h1 className="hidden">not available</h1>
+                    )}
+
+                    <div className="self-start">
+                      {section.content.map((paragraph, i) => (
+                        <p key={i} className="self-start">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </section>
