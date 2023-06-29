@@ -1,5 +1,3 @@
 import { isDevelopmentMode } from "./utils";
 
-export const BACKEND_URL = isDevelopmentMode
-  ? "/api"
-  : "https://dev-api.slove.io";
+export const BACKEND_URL = isDevelopmentMode ? "/api" : "https://api.slove.io";
