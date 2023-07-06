@@ -1,5 +1,6 @@
 import hero1 from "../../../assets/blog_imgs/blogPost_img.png";
 import hero2 from "../../../assets/blog_imgs/blog_test_img.png";
+import hero3 from "../../../assets/blog_imgs/blog_3.png";
 import mobiletestimg from "../../../assets/blog_imgs/app_mockup.png";
 
 export default interface BlogPostInterface {
@@ -23,7 +24,7 @@ export const blogPosts: BlogPostInterface[] = [
     blogAuthor: "by Gabbi",
     blogTime: "5min",
     blogDate: "16 May 2023",
-    tags: ["Inspiration", "Musician", "Interview", "Career"],
+    tags: ["EPK", "Music Industry", "Interview", "Tour Life"],
     postSummary: [
       "So, what’s this about musicians in dire need of an EPK? An Electronic Press Kit is your number one go to if you are an artist, or band, who wants their resume digitally packaged, neatly and completely!",
       "If you’re thinking, “Sounds like music to my ears!” then SLOVE’sgot you covered with all the detailed information you, or your band, need in order to create and present an EPK that will wow them all. This is a digital showcase with a sole purpose to attract and inform whoever visits. When we say whoever, that entails both listeners and important contacts you need for your career. We’re talking record labels, venues, bookers, promoters, talent buyers etc. The whole kit. Your EPK should be a complementary to your music website (if you have one) and should never be forgotten when reaching out to industry professionals. It’s also a selling point – so what you present definitely matters to who’s reading. This should be a pinnacle piece for your music portfolio that encapsulates who you, your band, are as artists. By using SLOVE’s EPK platform, we’ll make sure you create the best digital presentation that will draw everyone’s attention!",
@@ -109,7 +110,7 @@ export const blogPosts: BlogPostInterface[] = [
     blogAuthor: "By Gabbi",
     blogTime: "5min",
     blogDate: "26 May 2023",
-    tags: ["tag1", "tag2", "tag3", "tag4"],
+    tags: ["Booking", "Book Smart", "Plan Ahead", "Concert"],
     postSummary: [
       "Both venues and musicians can send booking requests to another. We have 2 easy ways to initiate a booking request.",
       "Option 1: Booking request initiated from the “Recommendations” tab.",
@@ -179,6 +180,49 @@ export const blogPosts: BlogPostInterface[] = [
           "Musicians will receive their payment from SLOVE as soon as the venue has paid SLOVE. Usually, this process can take up to 30 days.",
         ],
         sectionImgs: mobiletestimg,
+      },
+    ],
+  },
+  {
+    id: "3",
+    blog_img: hero3,
+    blogTitle: "Create a gig",
+    blogAuthor: "By Gabbi",
+    blogTime: "5min",
+    blogDate: "3 July 2023",
+    tags: ["Event Planning", "Event Registration", "Event Experience", "Gigs"],
+    postSummary: [
+      "SLOVE is here to help you either find gigs you want to watch or create gigs with your collaborators.",
+      "For the audience, read the following to receive information as to where you find upcoming events nearby!",
+      "For venues and musicians who have now been connected, this is your next step to gain exposure by creating the gig on our platform! This is a fantastic way to engage your network, audience and followers so that you receive maximum interest and get many tickets sold.",
+      "There are two ways you can do this:",
+      "Option one: 'The 2-sided way'",
+      "Option two: 'The 1-sided way'",
+    ],
+    sections: [
+      {
+        header: "The 2-sided way",
+        content: [
+          "1.   After the booking flow is done, and the contract is signed, SLOVE’s system automatically creates an event, which is placed on the audience's home screen. Venues and musicians have access to the event via “bookings” on the navigation tab.",
+          "2.   Approved section.",
+          "3.   Once approved, both venues and musicians are now.",
+          "4.   When this is done, the musician can contact the venue through the event card regarding anything required for the gig, such as the music and sound equipment they want to use at the location.",
+          "5.   Both the venue and musicians are free to promote the event page created with SLOVE on different channels they use.",
+          "6.   The audience can see the event page on SLOVE’s home screen and directly buy tickets there.",
+        ],
+      },
+      {
+        header: "The 1-sided gig",
+        content: [
+          "The only difference here is that venues and musicians have manually created the event on their own channels and SLOVE is another platform they can post the event on.",
+        ],
+      },
+      {
+        header: "What happens after the gig?",
+        content: [
+          "Both venues and musicians have to send confirmation via email that the gig is done.",
+          "After that, they receive a survey sent via email as well.",
+        ],
       },
     ],
   },
