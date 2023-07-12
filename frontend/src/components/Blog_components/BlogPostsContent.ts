@@ -1,7 +1,14 @@
 import hero1 from "../../../assets/blog_imgs/blogPost_img.png";
 import hero2 from "../../../assets/blog_imgs/blog_test_img.png";
-import hero3 from "../../../assets/blog_imgs/blog_3.png";
-import mobiletestimg from "../../../assets/blog_imgs/app_mockup.png";
+import hero3 from "../../../assets/blog_imgs/ai_blog.png";
+import hero4 from "../../../assets/blog_imgs/blog_3.png";
+import step1 from "../../../assets/blog_imgs/Step 1 - Initial booking.png";
+import step2 from "../../../assets/blog_imgs/Step 2 - Response from the receiver.png";
+import step3 from "../../../assets/blog_imgs/Step 3 - Negotiation.png";
+import step4 from "../../../assets/blog_imgs/Step 4 - Contract signing.png";
+import step5 from "../../../assets/blog_imgs/Step 5 - Confirmation.png";
+import step6 from "../../../assets/blog_imgs/Step 6 - Creating the Gig.png";
+import step7 from "../../../assets/blog_imgs/Step 7 - Invoice.png";
 
 export default interface BlogPostInterface {
   id: string;
@@ -123,7 +130,7 @@ export const blogPosts: BlogPostInterface[] = [
         content: [
           "One of the parties initiates a booking request which includes a genre, a date, time and an introductory message.",
         ],
-        sectionImgs: mobiletestimg,
+        sectionImgs: step1,
       },
       {
         header: "Response from the receiver",
@@ -135,14 +142,14 @@ export const blogPosts: BlogPostInterface[] = [
           "Choice 3: Decline the Request",
           "The receiving party also has the option to decline the request. No gig is further initiated from here.",
         ],
-        sectionImgs: mobiletestimg,
+        sectionImgs: step2,
       },
       {
         header: "Negotiation",
         content: [
           "As previously mentioned, choice number 1 and 2 are meant for negotiating. Here is your chance to inform and discuss all details required for the event and to further complete the booking process.",
         ],
-        sectionImgs: mobiletestimg,
+        sectionImgs: step3,
       },
       {
         header: "Contract Signing",
@@ -151,41 +158,74 @@ export const blogPosts: BlogPostInterface[] = [
           "For the venue party to find this procedure, you will find the option in the chat window, which is located at the top, to the right where it says “Send Contract”.",
           "The venue is responsible for including all the agreed upon factors into the system and for creating a contract. They send the contract to the musicians.",
         ],
-        sectionImgs: mobiletestimg,
+        sectionImgs: step4,
       },
       {
         header: "Confirmation",
         content: [
           "Musicians need to respond to the contract by either approving, declining or renegotiation. If the musician declines, then the contract will be terminated. If the musician renegotiates, then a further negotiation will take place until there is a mutual agreement that leads to a signed contract.",
         ],
-        sectionImgs: mobiletestimg,
+        sectionImgs: step5,
       },
       {
         header: "Creating the Gig",
         content: [
           "Once the venue receives a confirmation from the musician, the venue can then close the process by submitting the relevant details to generate an invoice from SLOVE.",
         ],
-        sectionImgs: mobiletestimg,
+        sectionImgs: step6,
       },
       {
         header: "Invoice",
         content: [
           "SLOVE will generate an invoice based on the details provided by the venues and will send it to the venue via email after the event.",
         ],
-        sectionImgs: mobiletestimg,
+        sectionImgs: step7,
       },
       {
         header: "Payment",
         content: [
           "Musicians will receive their payment from SLOVE as soon as the venue has paid SLOVE. Usually, this process can take up to 30 days.",
         ],
-        sectionImgs: mobiletestimg,
+        sectionImgs: step7,
       },
     ],
   },
   {
     id: "3",
     blog_img: hero3,
+    blogTitle: "Traditional AI vs Generative AI",
+    blogAuthor: "By Gabbi",
+    blogTime: "5min",
+    blogDate: "21 June 2023",
+    tags: ["Tech", "Data Science", "Big Data", "AI"],
+    postSummary: [
+      "Artificial Intelligence has increasingly become the revolutionary machine learning that has changed the world of generating data and computer systems. The first model dates to the 1950’s and in today’s modern society, we have become heavily reliant on the usage of AI. Thanks to AI technology, huge corporations, companies, the healthcare industry, and financial services are immensely improving within their fields. However, the vast complexities of AI and its different types are less known to the public. There is Traditional AI and Generative AI, and the two should not be categorized as the same type because they have separate functions and operate differently. We will discuss the two types of AI, uncovering the distinctive potentials each one has, and explain why SLOVE opposes Generative AI and favours Traditional AI.",
+    ],
+    sections: [
+      {
+        header: "Generative AI",
+        content: [
+          "When the average person thinks of AI, it is common that they assume it is Generative AI one is referring to. Since 2021, the use of Generative AI has rapidly increased. Dall-E and ChatGPT are examples of Generative AI – so let us take a look at how ChatGPT illustrates how this type of AI works. You type in a prompt in the chat tab that you need to write half an A4 text about where in the world global warming has been most prominent during the last 4 months. ChatGPT automatically delivers results by generating fresh data. Generative AI requires less sources and information, focusing on using neutral network to further create new data from existing data, resulting in more precise predictions and less data to train the model. Functioning as a strong complex tool, Generative AI’s probabilistic approach to generating new data is far more useful for creativity and any task requiring originality. By using machine learning to produce synthetic data, Generative AI has multiple functions for different applications. This includes computer vision, autonomous vehicles, language processing, music, and image generation. This year Generative AI has become a pinnacle source in the field of machine learning due to its contribution to helping automate more complex tasks. This is helping organizations improve their usage of resources, benefiting customer experience, driving innovation, and opening new opportunities in the field of machine learning algorithms. More examples of where one can apply Generative AI: music, 3D-models, manufacturing, entertainment, image synthesis and text to speech apps.",
+        ],
+      },
+      {
+        header: "Traditional AI",
+        content: [
+          "This type of AI is governed by a set of pre-determined rules to execute significant tasks and requires a heavy amount of data to train the model. It is a rule-based system, already programmed to use those incorporated rules to make its choices. Traditional AI is typically applied in classification, clustering, and regression. These types of machine learning are beneficial for problem-solving, although not recommended for creative or innovative tasks. It also requires more data compared to Generative AI, meaning it must have various sources to deliver the result. Once retrieving all information, what is presented is based on what matches your preferences. Examples of Traditional AI in practise are search engines, such as Google, social media, chatbots, text editors or autocorrection, e-payments, maps and navigation, and overall recommendation algorithms.",
+          "What separates the two is that Traditional AI relies solely on pre-determined rules and more data, unlike Generative that produces new data without pre-determined rules. It is the different definition of outputs that make the distinction between the two.",
+        ],
+      },
+      {
+        header: "Why SLOVE choses to not use Generative AI",
+        content: [
+          "Depending on the project, one needs to decipher which type of AI is suitable for the assigned task. Both forms of AI have different strengths and weaknesses, meaning they cannot operate at their highest potential at any given task. This is why SLOVE chooses Traditional AI – we are against using Generative AI due to the risk of it replacing an artist’s creativity. That is the downfall of applying Generative AI in the wrong context which in this case, removes original thought. We want our users to trust that the way we utilize Traditional AI, fills the purpose of intelligently understanding interest and maximizing exposure. It is solely functioning for administrative reasons, to accumulate artists' data, venue data, profile recommendations, to then match the best possible results for our users. This means the music is untouched, giving the artist full trust in that their art remains completely theirs.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "4",
+    blog_img: hero4,
     blogTitle: "Create a gig",
     blogAuthor: "By Gabbi",
     blogTime: "5min",

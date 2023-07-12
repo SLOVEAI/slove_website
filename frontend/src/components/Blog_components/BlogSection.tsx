@@ -5,7 +5,8 @@ import "aos/dist/aos.css";
 import BlogCard from "./BlogCard";
 import blogimg2 from "../../../assets/blog_imgs/blog_test_img.png";
 import blogimg1 from "../../../assets/blog_imgs/blogPost_img.png";
-import blogimg3 from "../../../assets/blog_imgs/blog_3.png";
+import blogimg3 from "../../../assets/blog_imgs/ai_blog.png";
+import blogimg4 from "../../../assets/blog_imgs/blog_3.png";
 
 function BlogSection() {
   useEffect(() => {
@@ -41,10 +42,17 @@ function BlogSection() {
           />
           <BlogCard
             selectedId="3"
+            blog_title="Traditional AI vs Generative AI"
+            date="21 June, 2023"
+            image={blogimg3}
+            description="AI is taking the world by storm. But what is AI, and how do we know its proper functions? Are people even aware that there is more than one type of AI? If you want to know more about this topic and how SLOVE generates it on our platform, read furthermore to gain more insight of a highly complex system that is so prevalent in today’s modern society."
+          />
+          <BlogCard
+            selectedId="4"
             blog_title="Create a gig"
             date="3 July, 2023"
-            image={blogimg3}
-            description="As for venues and musicians who have booked a collaboration, follow our step-by-step guide for creating the gig and making it visible on our platform. This enhances all your chances of getting a big audience, so be sure to make good use of this action! As for the audience, let us help you navigate in this section so that you can easily find where the best local gigs are playing!  "
+            image={blogimg4}
+            description="As for venues and musicians who have booked a collaboration, follow our step-by-step guide for creating the gig and making it visible on our platform. This enhances all your chances of getting a big audience, so be sure to make good use of this action! As for the audience, let us help you navigate in this section so that you can easily find where the best local gigs are playing!"
           />
         </div>
       </div>

@@ -28,7 +28,7 @@ const BlogCard: React.FC<BlogPageProps> = ({
           <div className="mx-auto" key={selectedPost.id}>
             <div className="relative group text-white">
               <div className="absolute -inset-1 bg-gradient-to-r from-secondaryColor_lilac to-secondaryColor_purple rounded-3xl blur opacity-25"></div>
-              <div className="relative group px-7 h-[18rem]">
+              <div className="relative group px-7 min-h-[18rem]">
                 <div
                   className="absolute -inset-1 bg-cover brightness-75 bg-center bg-no-repeat ring-1 ring-gray-900/5 rounded-3xl leading-none flex items-center justify-start space-x-6"
                   style={{ backgroundImage: `url(${image})` }}
